@@ -18,7 +18,7 @@ draft: true
   : January 24-26th 2025
 
 - **Registration:**
-- : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
+  : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
 
 - **Cost:**
   : FREE!
