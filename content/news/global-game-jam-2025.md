@@ -6,21 +6,21 @@ draft: true
 
 ## Announcing: Global Game Jam 2025
 
-**Global Game Jam 2025**
+### Global Game Jam 2025
 
 - **What:**
   : 48 hours to make a game and then show it off - solo, or with a team!
 
-- **Where:** 
+- **Where:**
   : University of Missouri St Louis (UMSL) [Building?]
 
 - **When:**
   : January 24-26th 2025
 
 - **Registration:**
-- : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com ](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
+- : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
 
-- **Cost:** 
+- **Cost:**
   : FREE!
 
 <div class=" text-body-secondary card my-4">
@@ -43,10 +43,10 @@ This year, we are returning to UMSL for the event!
 
 The event this year will feature:
 
-* Comfortable classrooms to work from with power and wi-fi!
-* Free food, drinks, and snacks!
-* Around-the-clock access - jam for the whole 48-hours straight, uninterupted if you want!
-* A 'quiet room' for anyone who needs a break to rest and recharge!
+- Comfortable classrooms to work from with power and wi-fi!
+- Free food, drinks, and snacks!
+- Around-the-clock access - jam for the whole 48-hours straight, uninterupted if you want!
+- A 'quiet room' for anyone who needs a break to rest and recharge!
 
 <div class="alert alert-info d-flex flex-row">
 <div class="p-1 me-2">
