@@ -1,7 +1,7 @@
 ---
 title: 'Global Game Jam 2025'
 date: 2025-01-09T13:32:57-06:00
-draft: true
+draft: false
 images: ["images/news/GGJ25-web-banner.png"]
 ---
 
@@ -19,7 +19,7 @@ images: ["images/news/GGJ25-web-banner.png"]
   : January 24-26th 2025
 
 - **Registration:**
-  : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
+  : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/)
   : [Global Game Jam Website](https://globalgamejam.org/jam-sites/2025/university-missouri-st-louis-it-and-cybersecurity-club-hosting-stlgamedev)
 
 - **Cost:**
@@ -38,7 +38,7 @@ The [Global Game Jam (GGJ)](https://globalgamejam.org/) is a 48-hour hackathon-s
 <div class="p-1 me-2">
 <i class="i fa-sharp-duotone fa-regular fa-triangle-exclamation fa-2x"></i>
 </div>
-<div class="px-1">We are asking everyone to please <a href="https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link">sign-up for the event</a> as soon as possible so that we can get an accurate attendee count for the event!</div>
+<div class="px-1">We are asking everyone to please <a href="https://www.meetup.com/st-louis-game-developers/events/297210316/">sign-up for the event</a> as soon as possible so that we can get an accurate attendee count for the event!</div>
 </div>
 
 This year, we are returning to UMSL for the event!
