@@ -32,7 +32,7 @@ images: ["images/news/GGJ25-web-banner.png"]
 </div>
 </div>
 
-The [Global Game Jam (GGJ)](https://globalgamejam.org/) is a 48-hour hackathon-style event that occurs simultaneously at hundreds of locations around the world. Game developers from all ages, experience, and skillsets gather, form teams, receive a theme, and then create games together within 48 hours. There are no winners– instead there is unbridled creativity and collaboration.
+The **Global Game Jam** (GGJ) is a 48-hour hackathon-style event that occurs simultaneously at hundreds of locations around the world. Game developers from all ages, experience, and skillsets gather, form teams, receive a theme, and then create games together within 48 hours. There are no winners– instead there is unbridled creativity and collaboration.
 
 <div class="alert alert-warning d-flex flex-row">
 <div class="p-1 me-2">
@@ -81,3 +81,6 @@ We look forward to making something awesome with you!
 Share this flier with your friends and colleagues!
 
 [Download Full Size Flier](images/GGJ25-flier.png)
+
+
+*super cool promo illustration by Kit Kitsis [@iLikeThePixies](https://linktr.ee/ilikethepixies)
