@@ -2,6 +2,7 @@
 title: 'Global Game Jam 2025'
 date: 2025-01-09T13:32:57-06:00
 draft: true
+images: ["images/news/GGJ25-web-banner.png"]
 ---
 
 ## Announcing: Global Game Jam 2025
@@ -75,4 +76,8 @@ We look forward to making something awesome with you!
 
 ### Flier
 
-[[ add the flier here ]]
+![Global Game Jam 2025 Flier](images/GGJ25-flier-sm.png)
+
+Share this flier with your friends and colleagues!
+
+[Download Full Size Flier](images/GGJ25-flier.png)
