@@ -12,13 +12,14 @@ draft: true
   : 48 hours to make a game and then show it off - solo, or with a team!
 
 - **Where:**
-  : University of Missouri St Louis (UMSL) [Building?]
+  : University of Missouri St Louis (UMSL) - Anheuser Busch Hall
 
 - **When:**
   : January 24-26th 2025
 
 - **Registration:**
   : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link)
+  : [Global Game Jam Website](https://globalgamejam.org/jam-sites/2025/university-missouri-st-louis-it-and-cybersecurity-club-hosting-stlgamedev)
 
 - **Cost:**
   : FREE!
@@ -46,7 +47,7 @@ The event this year will feature:
 - Comfortable classrooms to work from with power and wi-fi!
 - Free food, drinks, and snacks!
 - Around-the-clock access - jam for the whole 48-hours straight, uninterupted if you want!
-- A 'quiet room' for anyone who needs a break to rest and recharge!
+- Nearby Free Parking available each day on campus!
 
 <div class="alert alert-info d-flex flex-row">
 <div class="p-1 me-2">
@@ -58,21 +59,17 @@ The event this year will feature:
 ### Schedule
 
 - **Friday, Jan 24th**
-  : **5:00 pm** - Registration Opens
-  : **6:00 pm** - Welcoming Ceremony, Keynote Address, and Theme Reveal
-  : **6:30 pm** - Team Forming
-  : **7:00 pm** - Dinner
-  : **8:00 pm** - Start Jamming!
+  : **5:00 pm** - Registration Opens - Room 004
+  : **6:00 pm** - Welcoming Ceremony, Keynote Address, and Theme Reveal - Room 004
+  : **6:30 pm** - Rooms 002, 003, 004, and 005 are available for Jamming!
 - **Saturday, Jan 25th**
   : **All Day** - Jam!
-  : **12:00 pm** - Lunch
   : **3:00 pm** - Game Page Creation Due
-  : **7:00 pm** - Dinner
 - **Sunday, Jan 26th**
   : **All Day** - Jam!
-  : **12:00 pm** - Lunch
-  : **4:00 pm** - Game Submissions Close!
-  : **5:00 pm** - Game Sharing and Closing Ceremony
+  : **3:00 pm** - Game Submissions Close!
+  : **5:00 pm** - Game Sharing and Closing Ceremony - Room 004
+  : **6:00 pm** - Clean-up and go home!
 
 We look forward to making something awesome with you!
 
