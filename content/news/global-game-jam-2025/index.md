@@ -19,8 +19,8 @@ images: ["images/news/GGJ25-web-banner.png"]
   : January 24-26th 2025
 
 - **Registration:**
-  : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/)
   : [Global Game Jam Website](https://globalgamejam.org/jam-sites/2025/university-missouri-st-louis-it-and-cybersecurity-club-hosting-stlgamedev)
+  : [<i class="i fa-brands fa-meetup me-1"></i> MeetUp.com](https://www.meetup.com/st-louis-game-developers/events/297210316/)
 
 - **Cost:**
   : FREE!
@@ -38,7 +38,7 @@ The [Global Game Jam (GGJ)](https://globalgamejam.org/) is a 48-hour hackathon-s
 <div class="p-1 me-2">
 <i class="i fa-sharp-duotone fa-regular fa-triangle-exclamation fa-2x"></i>
 </div>
-<div class="px-1">We are asking everyone to please <a href="https://www.meetup.com/st-louis-game-developers/events/297210316/">sign-up for the event</a> as soon as possible so that we can get an accurate attendee count for the event!</div>
+<div class="px-1">We are asking everyone to please <a href="https://globalgamejam.org/jam-sites/2025/university-missouri-st-louis-it-and-cybersecurity-club-hosting-stlgamedev">sign-up for the event</a> as soon as possible so that we can get an accurate attendee count for the event!</div>
 </div>
 
 This year, we are returning to UMSL for the event!
