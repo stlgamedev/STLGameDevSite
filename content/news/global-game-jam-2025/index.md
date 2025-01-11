@@ -27,7 +27,7 @@ images: ["images/news/GGJ25-web-banner.png"]
 
 <div class=" text-body-secondary card my-4">
 <div class="card-body p-2">
-<p><small>We appologize for this very late annoucement. Due to complications beyond our control, it took much longer to finalize this event before we could share it.</small></p>
+<p><small>We apologize for this very late announcement. Due to complications beyond our control, it took much longer to finalize this event before we could share it.</small></p>
 <p class="mb-0" ><small><strong>Please</strong> consider helping us get the word out by sharing this post or the included flyer so that we can try to get as large of a turn out a possible! And make sure you register ASAP so that we have a good headcount!</small></p>
 </div>
 </div>
