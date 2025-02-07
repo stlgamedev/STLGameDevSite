@@ -1,7 +1,7 @@
 ---
 title: "Global Game Jam 2025 Postmortem"
 date: 2025-02-07
-draft: true
+draft: false
 tags: ["global game jam","postmortem", "wrap-up"]
 authors: ['Tim I Hely', 'TimConceivable']
 images: ["images/blog/ggj25-postmortem-cover.png"]
@@ -153,11 +153,11 @@ We hope you take the time to try out as many as possible, but here are a few tha
   </div>
 
   <div class="col mx-2">
-    <a class="align-items-center text-center link-body-emphasis text-decoration-none" target="_blank" href="https://globalgamejam.org/games/2025/memoriam-6">
+    <a class="align-items-center text-center link-body-emphasis text-decoration-none" target="_blank" href="https://globalgamejam.org/games/2025/matt-sudz-goin-ham-bathtime-breakout-1">
       <div class="card">
-        <img src="images/in-memoriam.jpeg" height="200" class="card-img-top" alt="In Memoriam">
+        <img src="images/matt-sudz.png" height="200" class="card-img-top" alt="Matt Sudz Goin' Ham - Bathtime Breakout">
         <div class="card-body text-center ">
-          <h6 class="card-title" >In Memoriam</h6>
+          <h6 class="card-title" >Matt Sudz Goin' Ham - Bathtime Breakout</h6>
         </div>
       </div>
     </a>
@@ -195,6 +195,6 @@ You can also follow us on social media: [Facebook](https://www.facebook.com/grou
 
 Share these infographics on social media!
 
-<img src="images/STLGGJ25-Numbers.png" class="img-thumbnail" alt="STL Global Game Jam 2025 - Numbers">
-<img src="images/STLGGJ25-Games.png" class="img-thumbnail" alt="STL Global Game Jam 2025 - Games">
-<img src="images/STLGGJ25-People.png" class="img-thumbnail" alt="STL Global Game Jam 2025 - People">
+<img src="images/STLGGJ25-Numbers.png" class="img-thumbnail" width="50%" alt="STL Global Game Jam 2025 - Numbers">
+<img src="images/STLGGJ25-Games.png" class="img-thumbnail" width="50%" alt="STL Global Game Jam 2025 - Games">
+<img src="images/STLGGJ25-People.png" class="img-thumbnail" width="50%" alt="STL Global Game Jam 2025 - People">
