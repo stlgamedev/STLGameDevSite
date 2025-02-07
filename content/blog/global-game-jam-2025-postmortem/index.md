@@ -189,6 +189,8 @@ If you would like to join us, you can join our [Discord](https://discord.com/inv
 
 You can also follow us on social media: [Facebook](https://www.facebook.com/groups/stlgamedev), [Twitter](https://x.com/stlgamedev), [Bluesky](https://bsky.app/profile/stlgame.dev), and [Instagram](https://www.instagram.com/stlgamedev)
 
+<img src="images/EVERYBODY.jpg" class="img-thumbnail" alt="Everyone at the Global Game Jam 2025">
+
 ## Infographics!
 
 Share these infographics on social media!
