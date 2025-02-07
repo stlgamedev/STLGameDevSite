@@ -34,12 +34,12 @@ jobs:
             base_url: ${{ steps.pages.outputs.base_url }}
             new_news_items: ${{ steps.compare-new-news.outputs.new_items }}
         steps:
-            -   name: check existing news
-                id: check-news
-                run: |
-                        curl -s https://stlgame.dev/news/index.json -o news_index.json
-                        old_news=$(jq . news_index.json)
-                        echo 'old_news'=$old_news >> $GITHUB_OUTPUT
+            # -   name: check existing news
+            #     id: check-news
+            #     run: |
+            #             curl -s https://stlgame.dev/news/index.json -o news_index.json
+            #             old_news=$(jq . news_index.json)
+            #             echo 'old_news'=$old_news >> $GITHUB_OUTPUT
             -   name: Install Hugo CLI
                 run: |
                     wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -73,15 +73,15 @@ jobs:
                     --gc \
                     --minify \
                     --baseURL "${{ steps.pages.outputs.base_url }}/"
-            -   name: compare new news
-                id: compare-new-news
-                run: |
-                        new_news=$(echo $(cat ./public/news/index.json))
-                        new_news=$(echo $new_news | jq)
-                        old_news='${{ steps.check-news.outputs.old_news }}'
-                        new_items=$(jq -r -n --argjson old "$old_news" --argjson new "$new_news" '$new - $old')
-                        echo $new_items          
-                        echo new_items=$new_items >> $GITHUB_OUTPUT             
+            # -   name: compare new news
+            #     id: compare-new-news
+            #     run: |
+            #             new_news=$(echo $(cat ./public/news/index.json))
+            #             new_news=$(echo $new_news | jq)
+            #             old_news='${{ steps.check-news.outputs.old_news }}'
+            #             new_items=$(jq -r -n --argjson old "$old_news" --argjson new "$new_news" '$new - $old')
+            #             echo $new_items          
+            #             echo new_items=$new_items >> $GITHUB_OUTPUT             
             -   name: Upload Artifact
                 uses: actions/upload-pages-artifact@v3
                 with: 
