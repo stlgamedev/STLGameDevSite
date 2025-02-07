@@ -119,6 +119,18 @@ The Global Game Jam - and game jams in general - are fun, exciting, and a great 
 
 </div>
 
+<div class="border p-3 pb-1   ">
+
+> <i class="i fa-sharp-duotone fa-quote-left fa-2x"></i> I had a blast at the 2025 GGJ! It was great to be back on the UMSL campus where we got to work alongside a bunch of other passionate game devs.
+
+<p class="mb-0">
+
+&mdash; <cite>Julia Bernett, artist on [In Memoriam](https://globalgamejam.org/games/2025/memoriam-6)</cite>
+
+</p>
+
+</div>
+
 ## Recommendations
 
 There were a *lot* of games made this year - **24** at our location alone!
