@@ -30,7 +30,11 @@ body {
     border-color: $color-orange !important;
 }
 
-ul:not(.nav) {
+.list-unstyled li {
+    list-style-type: none !important;
+}
+
+ul:not(.nav)  {
     list-style-type: square;
 }
 

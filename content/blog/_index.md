@@ -1,9 +1,9 @@
 ---
 title: "Blog"
-draft: true
+draft: false
 outputs:
     - HTML
     - JSON
     - RSS
 ---
-Here are some blog posts
+This is all of the Blog Posts written for this Site.

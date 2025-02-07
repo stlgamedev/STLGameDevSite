@@ -31,9 +31,6 @@ publishDir = "public/"
   name = "Blog"
   pageref = "/blog"
   weight = 30
-  disabled = true
-    [ menus.main.params ]
-      disabled = true
 [[menus.main]]
   name = "Events"
   pageref = "/events"
