@@ -4,7 +4,7 @@ date: 2025-02-07
 draft: true
 tags: ["global game jam","postmortem", "wrap-up"]
 authors: ['Tim I Hely', 'TimConceivable']
-images: []
+images: ["images/blog/ggj25-postmortem-cover.png"]
 ---
 
 Now that it’s been a few weeks and the dust has settled after Global Game Jam 2025, we’d like to take a moment to reflect on the experience of organizing the event.
