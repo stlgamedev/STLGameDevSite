@@ -121,14 +121,14 @@ jobs:
                         echo event_location=$(echo $new_one | jq -r '.[0][4]') >> $GITHUB_OUTPUT
                         echo event_description=$(echo $new_one | jq -r '.[0][6]') >> $GITHUB_OUTPUT
 
-            -   name: STLGameDev Discord
-                uses: Ilshidur/action-discord@master
-                env:
-                    DISCORD_USERNAME: "STLGameDev"
-                    DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-                    DISCORD_EMBEDS: ${{ steps.get-new-one.outputs.embeds }}
-                with:
-                    args: ":calendar: A new event has been scheduled!"
+            # -   name: STLGameDev Discord
+            #     uses: Ilshidur/action-discord@master
+            #     env:
+            #         DISCORD_USERNAME: "STLGameDev"
+            #         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+            #         DISCORD_EMBEDS: ${{ steps.get-new-one.outputs.embeds }}
+            #     with:
+            #         args: ":calendar: A new event has been scheduled!"
 
             -   name: STLGameDev Event
                 run: |
@@ -173,20 +173,20 @@ jobs:
                             
             #                 #STL #GameDev
 
-            -   name: Bsky's
-                uses: myConsciousness/bluesky-post@v5
-                with: 
-                    text: |
-                            📅 A new event has been scheduled!
-                            ${{ steps.get-new-one.outputs.event_name }} 
+            # -   name: Bsky's
+            #     uses: myConsciousness/bluesky-post@v5
+            #     with: 
+            #         text: |
+            #                 📅 A new event has been scheduled!
+            #                 ${{ steps.get-new-one.outputs.event_name }} 
                             
-                            ${{ steps.get-new-one.outputs.start_human }} at ${{ steps.get-new-one.outputs.event_location }}
+            #                 ${{ steps.get-new-one.outputs.start_human }} at ${{ steps.get-new-one.outputs.event_location }}
                             
-                            https://www.meetup.com/st-louis-game-developers/events/${{ steps.get-new-one.outputs.meetup }}
+            #                 https://www.meetup.com/st-louis-game-developers/events/${{ steps.get-new-one.outputs.meetup }}
                             
-                            #STL #GameDev
-                    link-preview-url: https://www.meetup.com/st-louis-game-developers/events/${{ steps.get-new-one.outputs.meetup }}
-                    identifier: "stlgame.dev"
-                    password: ${{ secrets.BLUESKY_PASSWORD }}
+            #                 #STL #GameDev
+            #         link-preview-url: https://www.meetup.com/st-louis-game-developers/events/${{ steps.get-new-one.outputs.meetup }}
+            #         identifier: "stlgame.dev"
+            #         password: ${{ secrets.BLUESKY_PASSWORD }}
 
             
