@@ -60,8 +60,8 @@
                             <div class="card border-color-orange">
 
                                 <img src="{{- if strings.Contains $event.name " Social" }}{{ $socialImg.RelPermalink }}
-                                {{- if strings.Contains $event.name " Share" }}{{ $demosImg.RelPermalink }}{{
-                                    else }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
+                                    {{- else if strings.Contains $event.name " Share" }}{{ $demosImg.RelPermalink }}
+                                    {{ else }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
                                 <div class="card-body d-flex flex-column ">
                                     <p class="h3 card-text text-center">{{ $event.name }}</p>
                                     <p class="h4 card-text text-center">{{ time.Format "Jan 2" $rawDate }} - {{
