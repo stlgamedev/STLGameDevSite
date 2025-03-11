@@ -2,6 +2,23 @@
 // {{ $bgE := resources.Get "images/bg-edge.png" }}
 // {{ $bgER := resources.Get "images/bg-edge-r.png" }}
 
+.color-orange {
+    color: $color-orange;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+.color-purple {
+    color: $color-purple;
+}
+
+.color-yellow {
+    color: $color-yellow ;
+}
+
+
 html,
 body {
     height: 100%;

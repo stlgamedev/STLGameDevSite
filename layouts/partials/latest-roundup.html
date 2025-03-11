@@ -9,24 +9,70 @@
     <div class="card-body">
 
         <div class="text-center">
-            <img width="120" height="120" {{ with resources.Get "images/stlgdru-logo.svg" }}src="{{ .RelPermalink }}" {{ end
-                }} /><br />
+            <img width="120" height="120" {{ with resources.Get "images/stlgdru-logo.svg" }}src="{{ .RelPermalink }}" {{
+                end }} /><br />
             <div id="roundup-spinner" class="spinner-border my-4" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             <p>
-                <small>The St. Louis Game Developer RoundUp is a periodic aggregation of news relevant to the St. Louis Game
+                <small>The St. Louis Game Developer RoundUp is a monthly aggregation of news relevant to the St. Louis
+                    Game
                     Development
                     Community.</small>
             </p>
+        </div>
+
+        <div class="text-end">
+            <a class="btn rounded btn-primary btn-sm" href="https://roundup.stlgame.dev" target="_blank">Past
+                RoundUps</a>
+        </div>
+
+    </div>
+
+    <div class="card-body border-top">
+
+        <p class="fs-5 pb-3 text-center color-purple">Subscribe to recieve Monthly RoundUps in your Email</p>
+
+        <form
+            action="https://dev.us3.list-manage.com/subscribe/post?u=4b257a41c7f509a1c26ef99f0&amp;id=c120d5d29b&amp;f_id=004d1de2f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_self" novalidate="">
+
+            <div class="mc-field-group pb-3">
+                <label for="mce-EMAIL" class="form-label"><small>Email Address <span
+                            class="asterisk color-yellow">*</span></small></label>
+                <input type="email" name="EMAIL" class="form-control required email " id="mce-EMAIL" required=""
+                    value="">
             </div>
-            
+
+            <div class="mc-field-group pb-3">
+                <label for="mce-FNAME" class="form-label"><small>First Name <span
+                            class="asterisk color-yellow">*</span></small></label>
+                <input type="text" name="FNAME" class="form-control required text float-righ" id="mce-FNAME" required=""
+                    value="">
             </div>
-            
-            <div class="card-footer justify-content-end d-flex">
-                <a class="btn rounded btn-primary btn-sm" href="https://roundup.stlgame.dev" target="_blank">Past
-                    RoundUps</a>
+
+            <div hidden=""><input type="hidden" name="tags" value="10815031"></div>
+            <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
             </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_4b257a41c7f509a1c26ef99f0_c120d5d29b" tabindex="-1" value="">
+            </div>
+
+            <div class="indicates-required color-yellow text-end"><small><span class="asterisk">*</span> indicates
+                    required</small></div>
+
+            <div class="text-center">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                    class="button btn btn-primary text-center" value="Subscribe">
+            </div>
+
+        </form>
+
+    </div>
+
 </div>
 
 <script>
