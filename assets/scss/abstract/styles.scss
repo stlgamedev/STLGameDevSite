@@ -19,6 +19,14 @@
 }
 
 
+a { 
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
 html,
 body {
     height: 100%;
