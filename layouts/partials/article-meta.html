@@ -1,27 +1,38 @@
-<div class="d-flex flex-column flex-lg-row justify-items-between align-items-baseline">
+<div class="row">
 
-    <div class="flex-grow-1">
-        <h2 id="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    </div>
-
-    <div>
-        <div class="post-meta " style="overflow: hidden; white-space: nowrap;">
-            <span class="fa-layers fa-fw">
+    <div class="d-flex justify-content-end">
+        <div class=" align-items-baseline" style="overflow: hidden; white-space: nowrap;">
+            {{- .Date.Format "Mon, Jan 2, 2006" -}}
+            <span class="ms-2 fa-layers fa-fw">
                 <i class="i fa-sharp-duotone fa-solid fa-calendar"></i>
                 <span class="fa-layers-text fa-inverse --fa-right" data-fa-transform="shrink-8 down-3"
                     style="font-weight:900">{{ .Date.Format "2" }}</span>
             </span>
-            {{- .Date.Format "Mon, Jan 2, 2006" -}}
-            
         </div>
     </div>
+
+    <div class="flex-grow-1">
+        <h3 id="title" class="font-size-smaller">
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </h3>
+    </div>
+
+    {{ if .Params.subtitle }}
+    <div class="d-flex flex-column flex-lg-row justify-items-between align-items-baseline">
+        <div class="flex-grow-1">
+            <h3><small class="fs-5 text-body-secondary">{{ .Params.subtitle }}</small></h3>
+        </div>
+    </div>
+    {{ end }}
 </div>
 
 <div class="d-flex flex-column flex-lg-row justify-items-between align-items-baseline ">
     <div class="flex-grow-1">
         {{ partial "authors.html" (dict "taxonomy" "authors" "page" .) }}
     </div>
-    <div >
+    <div>
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
 </div>
