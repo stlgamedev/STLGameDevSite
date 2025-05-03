@@ -26,7 +26,25 @@ defaults:
         shell: bash
 
 jobs:
+    check-repo:
+        runs-on: ubuntu-latest
+        outputs:
+            is-official: ${{ steps.set.outputs.is-official }}
+        steps:
+            - name: Check if running on stlgamedev/STLGameDevSite
+              id: set
+              run: |
+                if [[ "${GITHUB_REPOSITORY}" == "stlgamedev/STLGameDevSite" ]]; then
+                  echo "Running in official repo."
+                  echo "is-official=true" >> $GITHUB_OUTPUT
+                else
+                  echo "⚠️ This workflow runs only on the main stlgamedev/STLGameDevSite repo. Skipping..."
+                  echo "is-official=false" >> $GITHUB_OUTPUT
+                fi
+            
     build: 
+        needs: check-repo
+        if: needs.check-repo.outputs.is-official == 'true'
         runs-on: ubuntu-latest
         env:
             HUGO_VERSION: 0.136.5
@@ -88,13 +106,14 @@ jobs:
                     path: ./public
     
     deploy:
+        needs: [build, check-repo]
+        if: needs.check-repo.outputs.is-official == 'true'
         environment: 
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
         outputs:
             base_url: ${{ needs.build.outputs.base_url }}
         runs-on: ubuntu-latest
-        needs: build
         steps:
             -   name: Deploy
                 id: deployment

@@ -27,7 +27,7 @@ jobs:
           MEETUP_CLIENT_ID: ${{ secrets.MEETUP_CLIENT_ID }}
           MEETUP_CLIENT_SECRET: ${{ secrets.MEETUP_CLIENT_SECRET }}
           MEETUP_REFRESH_TOKEN: ${{ secrets.MEETUP_REFRESH_TOKEN }}
-        run: node scripts/fetchEvents.js
+        run: node scripts/fetchEvents.mjs
 
       - name: Commit and push changes
         if: success()

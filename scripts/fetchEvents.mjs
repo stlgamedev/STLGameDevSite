@@ -1,12 +1,12 @@
-// scripts/fetchEvents.js
-const { GraphQLClient, gql } = require('graphql-request');
-const fs = require('fs-extra');
-const path = require('path');
-const dayjs = require('dayjs');
-const fetch = require('node-fetch');
+// scripts/fetchEvents.mjs
+import { GraphQLClient, gql } from 'graphql-request';
+import fs from 'fs-extra';
+import path from 'path';
+import dayjs from 'dayjs';
+import fetch from 'node-fetch';
 
 const TOKEN_URL = 'https://secure.meetup.com/oauth2/access';
-const GROUP_URLNAME = 'your-meetup-group'; // Replace with your group URL name
+const GROUP_URLNAME = 'your-meetup-group'; // <- change to your group name
 const EVENTS_FILE = path.join('data', 'events.json');
 
 const {
