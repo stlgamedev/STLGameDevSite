@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
 import fetch from 'node-fetch';
 
 const TOKEN_URL = 'https://secure.meetup.com/oauth2/access';
-const GROUP_URLNAME = 'your-meetup-group'; // <- change to your group name
+const GROUP_URLNAME = 'st-louis-game-developers'; 
 const EVENTS_FILE = path.join('data', 'events.json');
 
 const {
