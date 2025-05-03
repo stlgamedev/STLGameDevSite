@@ -1,0 +1,44 @@
+name: Update Meetup Events
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  
+  update-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install graphql-request dayjs fs-extra
+
+      - name: Run fetchEvents script
+        env:
+          MEETUP_CLIENT_ID: ${{ secrets.MEETUP_CLIENT_ID }}
+          MEETUP_CLIENT_SECRET: ${{ secrets.MEETUP_CLIENT_SECRET }}
+          MEETUP_REFRESH_TOKEN: ${{ secrets.MEETUP_REFRESH_TOKEN }}
+        run: node scripts/fetchEvents.js
+
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/events.json
+          git commit -m "Update events.json from Meetup"
+          git push
+  
+  build-site:
+    needs: update-events
+    uses: ./.github/workflows/hugo-build.yaml
+        
