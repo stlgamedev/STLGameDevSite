@@ -46,6 +46,13 @@ publishDir = "public/"
     [ menus.main.params ]
       disabled = true
 
+[permalinks]
+  posts = "/blog/:slug/"
+  news = "/news/:slug/"
+  events = "/events/:slug/"
+  directory = "/directory/:slug/"
+  resources = "/resources/:slug/"
+
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -73,4 +80,5 @@ publishDir = "public/"
   [[module.mounts]]
     source = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
     target = "assets/js/bootstrap.bundle.js"
+ 
   

@@ -1,45 +1,36 @@
 // scripts/fetchEvents.mjs
-import { GraphQLClient, gql } from 'graphql-request';
-import fs from 'fs-extra';
+import fs from 'fs';
 import path from 'path';
-import dayjs from 'dayjs';
+import { GraphQLClient, gql } from 'graphql-request';
 import fetch from 'node-fetch';
 
-const TOKEN_URL = 'https://secure.meetup.com/oauth2/access';
-const GROUP_URLNAME = 'st-louis-game-developers'; 
-const EVENTS_FILE = path.join('data', 'events.json');
-
-const {
-  MEETUP_CLIENT_ID,
-  MEETUP_CLIENT_SECRET,
-  MEETUP_REFRESH_TOKEN
-} = process.env;
+const CLIENT_ID = process.env.MEETUP_CLIENT_ID;
+const CLIENT_SECRET = process.env.MEETUP_CLIENT_SECRET;
+const REFRESH_TOKEN = process.env.MEETUP_REFRESH_TOKEN;
 
 async function refreshAccessToken() {
-  const params = new URLSearchParams();
-  params.append('client_id', MEETUP_CLIENT_ID);
-  params.append('client_secret', MEETUP_CLIENT_SECRET);
-  params.append('grant_type', 'refresh_token');
-  params.append('refresh_token', MEETUP_REFRESH_TOKEN);
-
-  const res = await fetch(TOKEN_URL, {
+  const res = await fetch('https://secure.meetup.com/oauth2/access', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: params
+    body: new URLSearchParams({
+      client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
+      grant_type: 'refresh_token',
+      refresh_token: REFRESH_TOKEN,
+    }),
   });
 
+  if (!res.ok) throw new Error('Failed to refresh token');
   const data = await res.json();
-  if (!data.access_token) throw new Error('Failed to refresh token');
   return data.access_token;
 }
 
-async function fetchMeetupEvents(token) {
+async function fetchMeetupEvents(accessToken) {
   const client = new GraphQLClient('https://api.meetup.com/gql', {
-    headers: { Authorization: `Bearer ${token}` }
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
   });
-
-  const today = dayjs();
-  const twoMonths = today.add(2, 'month');
 
   const query = gql`
     query ($urlname: String!) {
@@ -54,7 +45,6 @@ async function fetchMeetupEvents(token) {
               description
               eventImage {
                 baseUrl
-                id
               }
             }
           }
@@ -63,40 +53,30 @@ async function fetchMeetupEvents(token) {
     }
   `;
 
-  const variables = { urlname: GROUP_URLNAME };
+  const variables = { urlname: 'st-louis-game-developers' };
   const data = await client.request(query, variables);
-  const events = data.groupByUrlname.upcomingEvents.edges
-    .map(edge => edge.node)
-    .filter(e => {
-      const d = dayjs(e.dateTime);
-      return d.isAfter(today) && d.isBefore(twoMonths);
-    });
-
-  return events;
+  return data.groupByUrlname.upcomingEvents.edges.map(e => e.node);
 }
 
 async function run() {
-  const token = await refreshAccessToken();
-  const newEvents = await fetchMeetupEvents(token);
+  try {
+    const accessToken = await refreshAccessToken();
+    const events = await fetchMeetupEvents(accessToken);
 
-  const oldEvents = fs.existsSync(EVENTS_FILE)
-    ? fs.readJsonSync(EVENTS_FILE)
-    : [];
+    const filePath = path.join('data', 'events.json');
+    const newJson = JSON.stringify(events, null, 2);
+    const oldJson = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : '';
 
-  const isEqual = JSON.stringify(oldEvents) === JSON.stringify(newEvents);
-
-  if (!isEqual) {
-    console.log('Events changed — updating file.');
-    fs.ensureDirSync('data');
-    fs.writeJsonSync(EVENTS_FILE, newEvents, { spaces: 2 });
-    process.exit(0); // success — changed
-  } else {
-    console.log('No event changes — nothing to update.');
-    process.exit(78); // custom exit code for "no changes"
+    if (newJson !== oldJson) {
+      fs.writeFileSync(filePath, newJson);
+      console.log('✅ Events updated.');
+    } else {
+      console.log('No changes to events.');
+    }
+  } catch (err) {
+    console.error('❌ Error:', err.message);
+    process.exit(1);
   }
 }
 
-run().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+run();
