@@ -2,7 +2,6 @@
 title: 'About the Organization'
 description: 'STLGameDev is a community-driven collective supporting game developers in the St. Louis region through monthly meetups, networking, collaboration, and shared resources. Whether you're an indie dev, hobbyist, student, or industry professional, we connect creators of all skill levels to grow and thrive together.'
 type: 'page'
-slug: 'about'
 ---
 ## Who we are
 
