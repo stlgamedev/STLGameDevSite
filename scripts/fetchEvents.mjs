@@ -20,7 +20,7 @@ async function refreshAccessToken() {
     }),
   });
 
-  console.log(res.ok);
+  console.log(res);
   if (!res.ok) throw new Error('Failed to refresh token');
   const data = await res.json();
   return data.access_token;
