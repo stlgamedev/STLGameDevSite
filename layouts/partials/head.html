@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 ">
 
 <title>{{ if .Title }}{{ .Title | title }} - {{ end }}{{ if ne .Title .Site.Title }}{{ .Site.Title | markdownify }}{{ end }}{{ if .IsHome }} - {{ .Param "tagline" }}{{ end }}</title>
+<meta name="description" content="{{ .Params.description }}">
 
 {{- partialCached "head/schema.html" . }}
 

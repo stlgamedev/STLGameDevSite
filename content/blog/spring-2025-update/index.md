@@ -6,6 +6,7 @@ draft: false
 tags: ["events","talks"]
 authors: ['neitherworld']
 images: ["images/blog/spring25-stlgamedevheader.png"]
+slug: 'spring-25-update'
 ---
 
 The game development scene in St. Louis is more active, more creative, and more supportive than ever before! March and April have been an absolute whirlwind of events, talks, and get-togethers – giving local developers bunches of opportunities to grow, share, and step out of their comfort zones. Whether you’re new to the scene or a seasoned dev, there’s never been a better time to get involved!
