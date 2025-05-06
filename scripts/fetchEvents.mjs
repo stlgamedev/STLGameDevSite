@@ -53,7 +53,7 @@ async function fetchMeetupEvents(accessToken) {
     }
   `;
 
-  const variables = { urlname: 'stlgamedev' };
+  const variables = { urlname: 'st-louis-game-developers' };
   const data = await client.request(query, variables);
   return data.groupByUrlname.upcomingEvents.edges.map(e => e.node);
 }
