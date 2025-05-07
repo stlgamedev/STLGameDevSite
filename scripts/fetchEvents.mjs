@@ -1,14 +1,31 @@
-// scripts/fetchEvents.mjs
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 import { GraphQLClient, gql } from 'graphql-request';
 import fetch from 'node-fetch';
+import { execSync } from 'child_process';
 
 const CLIENT_ID = process.env.MEETUP_CLIENT_ID;
 const CLIENT_SECRET = process.env.MEETUP_CLIENT_SECRET;
-const REFRESH_TOKEN = process.env.MEETUP_REFRESH_TOKEN;
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+const TOKEN_FILE_ENC = path.resolve('./.github/.refresh_token.enc');
+const TOKEN_FILE_PLAIN = path.resolve('./.github/.refresh_token.txt');
 
-async function refreshAccessToken() {
+async function decryptRefreshToken() {
+  try {
+    execSync(`openssl enc -aes-256-cbc -d -in ${TOKEN_FILE_ENC} -out ${TOKEN_FILE_PLAIN} -pass pass:${ENCRYPTION_KEY}`);
+    const token = await fs.readFile(TOKEN_FILE_PLAIN, 'utf8');
+    return token.trim();
+  } catch {
+    return process.env.MEETUP_REFRESH_TOKEN;
+  }
+}
+
+async function encryptRefreshToken(token) {
+  await fs.writeFile(TOKEN_FILE_PLAIN, token, 'utf8');
+  execSync(`openssl enc -aes-256-cbc -salt -in ${TOKEN_FILE_PLAIN} -out ${TOKEN_FILE_ENC} -pass pass:${ENCRYPTION_KEY}`);
+}
+
+async function refreshAccessToken(refreshToken) {
   const res = await fetch('https://secure.meetup.com/oauth2/access', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -16,37 +33,42 @@ async function refreshAccessToken() {
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
       grant_type: 'refresh_token',
-      refresh_token: REFRESH_TOKEN,
-    }),
+      refresh_token: refreshToken
+    })
   });
 
-  console.log(res);
-  if (!res.ok) throw new Error('Failed to refresh token');
+  if (!res.ok) {
+    throw new Error('Failed to refresh token');
+  }
+
   const data = await res.json();
+  if (data.refresh_token) {
+    await encryptRefreshToken(data.refresh_token);
+  }
   return data.access_token;
 }
 
 async function fetchMeetupEvents(accessToken) {
-  const client = new GraphQLClient('https://api.meetup.com/gql', {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-    },
+  const graphQLClient = new GraphQLClient('https://api.meetup.com/gql', {
+    headers: { Authorization: `Bearer ${accessToken}` }
   });
 
   const query = gql`
-    query ($urlname: String!) {
+    query ($urlname: String!, $afterDateTime: DateTime!) {
       groupByUrlname(urlname: $urlname) {
-        upcomingEvents(input: { first: 100 }) {
+        events(filter: {afterDateTime: $afterDateTime, status: ACTIVE}) {
           edges {
             node {
               id
               title
-              eventUrl
+              status
               dateTime
               description
-              eventImage {
-                baseUrl
+              endTime
+              featuredEventPhoto {
+                standardUrl
               }
+              eventUrl
             }
           }
         }
@@ -54,26 +76,26 @@ async function fetchMeetupEvents(accessToken) {
     }
   `;
 
-  const variables = { urlname: 'st-louis-game-developers' };
-  const data = await client.request(query, variables);
-  return data.groupByUrlname.upcomingEvents.edges.map(e => e.node);
+  const variables = { 
+    urlname: 'st-louis-game-developers',
+    afterDateTime: new Date().toISOString()
+  };
+  const data = await graphQLClient.request(query, variables);
+  return data.groupByUrlname.upcomingEvents.edges.map(edge => edge.node);
+}
+
+async function saveEvents(events) {
+  const fs = await import('fs/promises');
+  await fs.writeFile('data/events.json', JSON.stringify(events, null, 2));
 }
 
 async function run() {
   try {
-    const accessToken = await refreshAccessToken();
+    const refreshToken = await decryptRefreshToken();
+    const accessToken = await refreshAccessToken(refreshToken);
     const events = await fetchMeetupEvents(accessToken);
-
-    const filePath = path.join('data', 'events.json');
-    const newJson = JSON.stringify(events, null, 2);
-    const oldJson = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : '';
-
-    if (newJson !== oldJson) {
-      fs.writeFileSync(filePath, newJson);
-      console.log('✅ Events updated.');
-    } else {
-      console.log('No changes to events.');
-    }
+    await saveEvents(events);
+    console.log('✅ Events updated successfully');
   } catch (err) {
     console.error('❌ Error:', err.message);
     process.exit(1);
