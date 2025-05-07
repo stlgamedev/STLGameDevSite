@@ -2,7 +2,7 @@ name: Update Meetup Events
 
 on:
   schedule:
-    - cron: "0 6 * * *" # daily at 6am UTC
+    - cron: "0 6 * * *" # Run at 6 AM UTC every day
   workflow_dispatch:
 
 jobs:
@@ -12,36 +12,55 @@ jobs:
       MEETUP_CLIENT_ID: ${{ secrets.MEETUP_CLIENT_ID }}
       MEETUP_CLIENT_SECRET: ${{ secrets.MEETUP_CLIENT_SECRET }}
       MEETUP_REFRESH_TOKEN: ${{ secrets.MEETUP_REFRESH_TOKEN }}
+      ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
 
       - name: Install dependencies
         run: npm install graphql-request
 
-      - name: Run fetch script
-        run: node scripts/fetchEvents.mjs
-
-      - name: Commit and push if changed
+      - name: Decrypt Refresh Token (if encrypted exists)
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          if [[ `git status --porcelain` ]]; then
-            git add data/events.json
-            git commit -m "Update events from Meetup"
-            git push
-          else
-            echo "No changes to commit"
+          if [[ -f ".github/.refresh_token.enc" ]]; then
+            openssl enc -aes-256-cbc -d -in .github/.refresh_token.enc \
+              -out .github/.refresh_token.txt \
+              -pass pass:${ENCRYPTION_KEY}
           fi
 
-      - name: Trigger Hugo build
+      - name: Run fetchEvents script
+        run: node scripts/fetchEvents.mjs
+
+      - name: Encrypt & Commit new Refresh Token
+        run: |
+          if [[ -f ".github/.refresh_token.txt" ]]; then
+            openssl enc -aes-256-cbc -salt -in .github/.refresh_token.txt \
+              -out .github/.refresh_token.enc -pass pass:${ENCRYPTION_KEY}
+            rm .github/.refresh_token.txt
+            git config user.name "GitHub Actions"
+            git config user.email "actions@github.com"
+            git add .github/.refresh_token.enc
+            git commit -m "🔒 Update encrypted OAuth refresh token"
+            git push
+          fi
+
+      - name: Commit and push events if changed
+        run: |
+          git diff --exit-code data/events.json || (
+            git config user.name "GitHub Actions"
+            git config user.email "actions@github.com"
+            git add data/events.json
+            git commit -m "Update events.json from Meetup"
+            git push
+          )
+
+      - name: Trigger Hugo Build
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: stlgamedev/STLGameDevSite
           event-type: build-site
