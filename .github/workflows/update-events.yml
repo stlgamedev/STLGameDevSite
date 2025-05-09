@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Fetch and update events
-        run: node scripts/fetchRssEvents.mjs
+        run: node scripts/fetchRSSEvents.mjs
 
       - name: Commit changes if events.json changed
         run: |
