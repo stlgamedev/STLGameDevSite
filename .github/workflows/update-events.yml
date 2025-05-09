@@ -1,44 +1,37 @@
-name: Update Events
+name: Update Meetup Events
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every midnight UTC
+    - cron: "0 0 * * *" # every midnight UTC
   workflow_dispatch:
 
 jobs:
   update-events:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install graphql-request
+        run: npm ci
 
-      - name: Run fetchEvents script
-        env:
-          MEETUP_CLIENT_ID: ${{ secrets.MEETUP_CLIENT_ID }}
-          MEETUP_CLIENT_SECRET: ${{ secrets.MEETUP_CLIENT_SECRET }}
-          MEETUP_REFRESH_TOKEN: ${{ secrets.MEETUP_REFRESH_TOKEN }}
-          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
-        run: node scripts/fetchEvents.mjs
+      - name: Fetch and update events
+        run: node scripts/fetchRssEvents.mjs
 
-      - name: Commit and push changes
+      - name: Commit changes if events.json changed
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add data/events.json .github/.refresh_token.enc
-          git diff --quiet && git diff --staged --quiet || git commit -m "🔄 Update events list"
-          git push
-
-      - name: Trigger site build
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: hugo-build.yml
-          repo: ${{ github.repository }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add data/events.json
+            git commit -m "Update events.json from Meetup RSS feed"
+            git push
+          fi
