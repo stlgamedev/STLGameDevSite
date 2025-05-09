@@ -18,7 +18,7 @@
 </div>
 
 <script>
-    const imageURLs = [{{ range resources.Match "images/photos/*.jpg" }}"{{ .RelPermalink }}", {{ end }}];
+    const imageURLs = [{{ range resources.Match "images/photos/*.*" }}"{{ .RelPermalink }}", {{ end }}];
 
     $(document).ready(function () {
         var randomIndex = Math.floor(Math.random() * imageURLs.length);
