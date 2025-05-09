@@ -1,40 +1,42 @@
-{{- $now := time.Now -}}
-{{- $events := slice -}}
 
-{{- range .Site.Data.events -}}
-{{- $eventTime := time .dateTime -}}
-{{- if ge $eventTime $now -}}
-{{- $events = $events | append (dict
-"title" .title
-"date" $eventTime
-"description" .description
-"link" .eventUrl
+<section class="container">
+    <p>Please Excuse the Mess! We are working on overhauling our Events system.</p>
+    <p>In the meantime, please visit our <a href="https://www.meetup.com/st-louis-game-developers/"><i class="fa-brands fa-meetup"></i> Meetup Group</a> for our upcoming events.</p>
+</section>
+
+{{- $today := (now | time.Format "2006-01-02" | time ) -}}
+{{- $eventsRaw := .Site.Data.events -}}
+{{- $upcoming := slice -}}
+
+{{ range $event := $eventsRaw }}
+{{- $eventTime := ($event.dateTime | time.Format "2006-01-02" | time ) -}}
+{{- if (ge $eventTime $today) -}}
+{{- $upcoming = $upcoming | append (dict
+"title" $event.title
+"description" $event.description
+"dateTime" (time.AsTime $event.dateTime)
+"eventUrl" $event.eventUrl
 ) -}}
 {{- end -}}
-{{- end -}}
+{{ end }}
 
-{{- if gt (len $events) 0 -}}
-{{- range first 1 (sort $events "date") -}}
-<section class="container p-3">
-    <h2 class="text-center">{{ .title }}</h2>
-    <p class="text-center">
-        <strong>{{ time.Format ":date_long" .date }}</strong><br>
-        {{ time.Format ":time_short" .date }}
-    </p>
-
-    {{/* Auto-link plain URLs in Markdown before rendering */}}
-    {{- $linkedDesc := replaceRE `https?://[^\s]+` `<$0>` .description -}}
-        <div>{{ $linkedDesc | markdownify }}</div>
-
-        <p class="text-center mt-3">
-            <a href="{{ .link }}" class="btn btn-outline-primary" target="_blank">
-                <i class="fa-brands fa-meetup"></i> View on Meetup
+{{ if gt (len $upcoming) 0 }}
+{{ $next := index (sort $upcoming "dateTime") 0 }}
+<section class="container my-4">
+    <dl class="p-3 m-0 border rounded">
+        <dt class="h4 text-center">{{ $next.title }}</dt>
+        <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} – {{ time.Format ":time_short"
+            $next.dateTime }}</dt>
+        <dd class="">{{ $next.description | markdownify }}</dd>
+        {{ if $next.eventUrl }}
+        <dd class="text-center">
+            <a href="{{ $next.eventUrl }}" class="btn btn-outline-primary" target="_blank">
+                <i class="fa-brands fa-meetup"></i> View Event
             </a>
-        </p>
+        </dd>
+        {{ end }}
+    </dl>
 </section>
-{{- end -}}
-{{- else -}}
-<section class="container p-3">
-    <p class="text-center">No upcoming events</p>
-</section>
-{{- end -}}
+{{ else }}
+<p class="text-center">No upcoming events</p>
+{{ end }}
