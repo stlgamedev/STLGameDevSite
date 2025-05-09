@@ -19,6 +19,7 @@
     "graphql-request": "^7.1.2",
     "jquery": "^3.7.1",
     "node-fetch": "^3.3.2",
+    "rss-parser": "^3.13.0",
     "sass": "^1.79.4"
   },
   "devDependencies": {
