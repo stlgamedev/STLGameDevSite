@@ -21,7 +21,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install node-ical
+        run: |
+            npm install node-ical
+            npm install luxon
+        
         
       - name: Download calendar
         run: curl -s "https://calendar.google.com/calendar/ical/c_dd5b9f0b9b6887c36cde8da86ef9282654e82998c89b4787cc8100fb65dc225e%40group.calendar.google.com/public/basic.ics" -o calendar.ics
