@@ -2,6 +2,8 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 const IcalExpander = require('ical-expander');
 
+const eventZone = 'America/Chicago';
+
 // Read the .ics file
 const icsData = fs.readFileSync('calendar.ics', 'utf8');
 
@@ -21,16 +23,16 @@ const allEvents = [
     title: e.summary,
     description: e.description || '',
     location: e.location || '',
-    dateTime: DateTime.fromJSDate(e.startDate.toJSDate(), { zone: e.startDate.zoneName }).toISO(),
-    endTime: DateTime.fromJSDate(e.endDate.toJSDate(), { zone: e.endDate.zoneName }).toISO(),
+    dateTime: DateTime.fromJSDate(e.startDate.toJSDate()).setZone(eventZone).toISO(),
+    endTime: DateTime.fromJSDate(e.endDate.toJSDate()).setZone(eventZone).toISO(),
     eventUrl: e.url || ''
   })),
   ...occurrences.map(({ startDate, endDate, item }) => ({
     title: item.summary,
     description: item.description || '',
     location: item.location || '',
-    dateTime: DateTime.fromJSDate(startDate.toJSDate(), { zone: startDate.zoneName }).toISO(),
-    endTime: DateTime.fromJSDate(endDate.toJSDate(), { zone: endDate.zoneName }).toISO(),
+    dateTime: DateTime.fromJSDate(startDate.toJSDate()).setZone(eventZone).toISO(),
+    endTime: DateTime.fromJSDate(endDate.toJSDate()).setZone(eventZone).toISO(),
     eventUrl: item.url || ''
   }))
 ];
