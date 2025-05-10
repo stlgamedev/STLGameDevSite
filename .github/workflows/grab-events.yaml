@@ -25,7 +25,7 @@ jobs:
         run: curl -s "https://calendar.google.com/calendar/ical/c_dd5b9f0b9b6887c36cde8da86ef9282654e82998c89b4787cc8100fb65dc225e%40group.calendar.google.com/public/basic.ics" -o calendar.ics
 
       - name: Convert ICS to JSON
-        run: node scripts/convert-ics.js
+        run: node scripts/convert-ics-to-json.js
 
       - name: Commit only if changed
         run: |
