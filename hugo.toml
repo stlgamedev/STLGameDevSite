@@ -1,5 +1,7 @@
 baseURL = 'https://stlgame.dev/'
 languageCode = 'en-us'
+defaultContentLanguage = "en"
+timeZone = "America/Chicago"
 title = 'STLGameDev'
 
 enableEmoji = true
