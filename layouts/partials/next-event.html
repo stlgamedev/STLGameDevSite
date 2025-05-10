@@ -1,20 +1,26 @@
-{{- $today := (now | time ) -}}
+{{- $layout := "2006-01-02T15:04:05-07:00" -}}
+{{- $today := now -}}
+{{- $today = ($today | time.In "America/Chicago" | time.Format $layout) -}}
+
 {{- $eventsRaw := .Site.Data.events -}}
 {{- $upcoming := slice -}}
 
-{{ range $event := $eventsRaw }}
-{{- $eventTime := ($event.dateTime | time ) -}}
-{{- $eventTime = $eventTime.Local -}}
-{{- if (ge $eventTime $today) -}}
-{{- $upcoming = $upcoming | append (dict
-"title" $event.title
-"description" $event.description
-"dateTime" $eventTime
-"eventUrl" $event.eventUrl
-"where" $event.location
-) -}}
-{{- end -}}
-{{ end }}
+{{$today}} || {{ now }}
+
+{{- range $event := $eventsRaw }}
+  {{- $eventTime := time.AsTime $event.dateTime -}}
+  {{- $eventTime = ($eventTime | time.In "America/Chicago" | time.Format $layout) -}}
+
+  {{- if ge $eventTime $today -}}
+    {{- $upcoming = $upcoming | append (dict
+      "title" $event.title
+      "description" $event.description
+      "dateTime" $eventTime
+      "eventUrl" $event.eventUrl
+      "where" $event.location
+    ) -}}
+  {{- end -}}
+{{- end }}
 
 {{ if gt (len $upcoming) 0 }}
 {{ $next := index (sort $upcoming "dateTime") 0 }}

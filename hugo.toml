@@ -11,13 +11,14 @@ enableEmoji = true
     title = 'STLGameDev'
     author = 'The STLGameDev Admin Team'
     images = ['meta-image.png']
+    timezone = "America/Chicago"
+
   [params.social]
     twitter = 'STLGameDev'
 
 relativeURLs = false
 
 publishDir = "public/"
-
 
 [[menus.main]]
   name = "About"
