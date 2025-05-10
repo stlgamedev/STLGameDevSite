@@ -1,18 +1,20 @@
 const fs = require('fs');
 const ical = require('node-ical');
-const { DateTime } = require('luxon');
+const icalDate = require('ical-date-parser');
 
 (async () => {
-  const data = await ical.parseFile('calendar.ics');
+  const data = ical.sync.parseFile('calendar.ics');
   const events = [];
 
-  for (const k in data) {
-    const ev = data[k];
+  for (const event of Object.values(data)) {
+  
 
     
       events.push({
-        ...ev
+        ...event
       });
+
+      
     
 
 
