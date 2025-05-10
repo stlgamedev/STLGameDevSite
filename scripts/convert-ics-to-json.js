@@ -12,7 +12,7 @@ const icalExpander = new IcalExpander({ ics: icsData, maxIterations: 1000 });
 
 // Define time range for events to extract
 const now = new Date();
-const future = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate());
+const future = new Date(now.getFullYear(), now.getMonth() + 3, now.getDate());
 
 // Get expanded events (handles recurrence)
 const { events, occurrences } = icalExpander.between(now, future);

@@ -21,15 +21,16 @@
     {{- $events := slice -}}
 
     {{- range $eventRaw := $eventsRaw -}}
-    {{- $eventTime := time.AsTime $eventRaw.dateTime -}}
-    {{- $eventTime = ($eventTime | time.Format $layout) -}}
-    {{- $eventDate := (time.Format "2006-01-02" $eventTime | time) -}}
-    {{- if (ge $eventDate $today) -}}
+    {{- $eventTime := time.AsTime $eventRaw.dateTime | time.Format $layout -}}
+    {{- $endTime := time.AsTime $eventRaw.endTime | time.Format $layout -}}
+    {{- $eventEndDate := (time.Format "2006-01-02" $endTime | time) -}}
+    {{- if (gt $eventEndDate $today) -}}
     {{- $events = $events | append (dict
     "name" $eventRaw.title
     "desc" $eventRaw.description
     "when" $eventTime
     "where" $eventRaw.location
+    "end" $endTime
     ) -}}
     {{ end }}
     {{ end }}
@@ -56,13 +57,14 @@
 
                     <div class="col d-flex align-items-stretch">
                         <div class="card border-color-orange">
-                            <img src="{{- if strings.Contains $event.name " Social" }}{{ $socialImg.RelPermalink }} {{-
-                                else if strings.Contains $event.name " Share" }}{{ $demosImg.RelPermalink }} {{ else
+                            <img src="{{- if strings.Contains $event.name "Social" }}{{ $socialImg.RelPermalink }} {{-
+                                else if strings.Contains $event.name "Share & Play" }}{{ $demosImg.RelPermalink }} {{ else
                                 }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
                             <div class="card-body d-flex flex-column">
                                 <p class="h3 card-text text-center">{{ $event.name }}</p>
-                                <p class="h4 card-text text-center">{{ time.Format "Jan 2" $rawDate }} – {{ time.Format
-                                    ":time_short" $rawDate }}</p>
+                                <p class="h4 card-text text-center">{{ time.Format "Jan 2" $event.when }} {{ time.Format
+                                    ":time_short" $event.when }} to {{ if ne (time.Format "Jan 2" $event.when) (time.Format "Jan 2" $event.end) -}}<br />{{ time.Format "Jan 2" $event.end }} {{ end -}}{{ time.Format
+                                        ":time_short" $event.end }}</p>
                                 <p class="card-text"><em>Where:</em> {{ $event.where }}</p>
                                 <p class="card-text">{{ $event.desc }}</p>
                                 

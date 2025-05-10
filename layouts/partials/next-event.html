@@ -7,6 +7,7 @@
 
 {{- range $event := $eventsRaw }}
   {{- $eventTime := time.AsTime $event.dateTime | time.Format $layout -}}
+  {{- $endTime := time.AsTime $event.endTime | time.Format $layout -}}
 
   {{- if ge $eventTime $today -}}
     {{- $upcoming = $upcoming | append (dict
@@ -15,6 +16,7 @@
       "dateTime" $eventTime
       "eventUrl" $event.eventUrl
       "where" $event.location
+      "end" $endTime
     ) -}}
   {{- end -}}
 {{- end }}
@@ -24,8 +26,9 @@
 <section class="container my-4">
     <dl class="p-3 m-0 border rounded">
         <dt class="h4 text-center">{{ $next.title }}</dt>
-        <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} – {{ time.Format ":time_short"
-            $next.dateTime }}</dt>
+        <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} {{ time.Format ":time_short"
+            $next.dateTime }} to {{ if ne (time.Format "Jan 2" $next.dateTime) (time.Format "Jan 2" $next.end) -}}<br />{{ time.Format "Jan 2" $next.end }} {{ end -}}{{ time.Format ":time_short" $next.end }}</dt>
+        </dt>
         <dd><em>Where:</em> {{ $next.where }}</dd>
         <dd class="">{{ $next.description | markdownify }}</dd>
         {{ if $next.eventUrl }}
