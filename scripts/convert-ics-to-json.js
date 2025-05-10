@@ -1,8 +1,7 @@
 const fs = require('fs');
 const ical = require('node-ical');
-const icalDate = require('ical-date-parser');
 
-(async () => {
+
   const data = ical.sync.parseFile('calendar.ics');
   const events = [];
 
@@ -35,4 +34,4 @@ const icalDate = require('ical-date-parser');
   }
 
   fs.writeFileSync('data/events.json', JSON.stringify(events, null, 2));
-})();
+
