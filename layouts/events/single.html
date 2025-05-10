@@ -14,7 +14,7 @@
 <section class="d-flex flex-column">
     {{- $layout := "2006-01-02T15:04:05-07:00" -}}
     {{- $today := now -}}
-    {{- $today = ($today | time.In "America/Chicago" | time.Format $layout) -}}
+    {{- $today = ($today | time.Format $layout) -}}
     {{- $today = (time.Format "2006-01-02" $today | time) -}}
     
     {{- $eventsRaw := .Site.Data.events -}}
@@ -22,7 +22,7 @@
 
     {{- range $eventRaw := $eventsRaw -}}
     {{- $eventTime := time.AsTime $eventRaw.dateTime -}}
-    {{- $eventTime = ($eventTime | time.In "America/Chicago" | time.Format $layout) -}}
+    {{- $eventTime = ($eventTime | time.Format $layout) -}}
     {{- $eventDate := (time.Format "2006-01-02" $eventTime | time) -}}
     {{- if (ge $eventDate $today) -}}
     {{- $events = $events | append (dict

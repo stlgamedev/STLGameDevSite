@@ -9,14 +9,15 @@ const { DateTime } = require('luxon');
   for (const k in data) {
     const ev = data[k];
     if (ev.type === 'VEVENT') {
-      // Assume event.start is in local time (America/Chicago)
-      const dtUTC = DateTime.fromJSDate(ev.start, { zone: 'America/Chicago' }).toUTC().toISO();
+      // Assume the intended timezone is America/Chicago
+      const dt = DateTime.fromJSDate(ev.start, { zone: 'utc' }).setZone('America/Chicago');
 
       events.push({
         title: ev.summary,
         description: ev.description || '',
         location: ev.location || '',
-        dateTime: dtUTC,
+        // This is now correctly localized to Central Time
+        dateTime: dt.toISO(), // e.g., 2025-05-23T17:00:00.000-05:00
         eventUrl: ev.url || ''
       });
     }
