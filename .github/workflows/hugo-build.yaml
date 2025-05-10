@@ -3,10 +3,11 @@ name: ⚙ Build the Hugo Site
 on: 
     workflow_dispatch:
     workflow_call:
-        outputs: 
-            base_url: 
-                description: "The Base URL of the site"
-                value: ${{ jobs.build.outputs.base_url }}
+        inputs:
+            triggeredByEventChange:
+                required: true
+                type: boolean
+
     push:
         branches:
             - main
@@ -31,16 +32,16 @@ jobs:
         outputs:
             is-official: ${{ steps.set.outputs.is-official }}
         steps:
-            - name: Check if running on stlgamedev/STLGameDevSite
-              id: set
-              run: |
-                if [[ "${GITHUB_REPOSITORY}" == "stlgamedev/STLGameDevSite" ]]; then
-                  echo "Running in official repo."
-                  echo "is-official=true" >> $GITHUB_OUTPUT
-                else
-                  echo "⚠️ This workflow runs only on the main stlgamedev/STLGameDevSite repo. Skipping..."
-                  echo "is-official=false" >> $GITHUB_OUTPUT
-                fi
+            -   name: Check if running on stlgamedev/STLGameDevSite
+                id: set
+                run: |
+                    if [[ "${GITHUB_REPOSITORY}" == "stlgamedev/STLGameDevSite" ]]; then
+                        echo "Running in official repo."
+                        echo "is-official=true" >> $GITHUB_OUTPUT
+                    else
+                        echo "⚠️ This workflow runs only on the main stlgamedev/STLGameDevSite repo. Skipping..."
+                        echo "is-official=false" >> $GITHUB_OUTPUT
+                    fi
             
     build: 
         needs: check-repo
