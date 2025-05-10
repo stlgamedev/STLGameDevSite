@@ -25,8 +25,6 @@
     "desc" $eventRaw.description
     "when" $eventRaw.dateTime
     "where" $eventRaw.location
-    "meetup" ($eventRaw.eventUrl | strings.TrimPrefix "https://www.meetup.com/st-louis-game-developers/events/" |
-    strings.TrimSuffix "/")
     ) -}}
     {{ end }}
     {{ end }}
@@ -46,7 +44,7 @@
     {{ $lastDate = $eventDate }}
     <div class="event-month my-3">
         <h2>{{ $eventDate }}</h2>
-        <div class="event-list">
+        <div class="event-list my-3">
             <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                     {{ end }}
@@ -62,14 +60,7 @@
                                     ":time_short" $rawDate }}</p>
                                 <p class="card-text"><em>Where:</em> {{ $event.where }}</p>
                                 <p class="card-text">{{ $event.desc }}</p>
-                                {{ if $event.meetup }}
-                                <div class="card-text text-center mt-auto">
-                                    <a href="https://www.meetup.com/st-louis-game-developers/events/{{ $event.meetup }}/"
-                                        class="btn btn-outline-primary" target="_blank">
-                                        <i class="i fa-brands fa-meetup"></i> RSVP
-                                    </a>
-                                </div>
-                                {{ end }}
+                                
                             </div>
                         </div>
                     </div>

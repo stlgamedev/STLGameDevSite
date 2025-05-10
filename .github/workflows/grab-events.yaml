@@ -6,8 +6,10 @@ on:
   workflow_dispatch:     # Allow manual trigger
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
+    outputs:
+      events_changed: ${{ steps.detect_changes.outputs.events_changed }}
 
     steps:
       - name: Checkout repo
@@ -27,15 +29,26 @@ jobs:
       - name: Convert ICS to JSON
         run: node scripts/convert-ics-to-json.js
 
-      - name: Commit only if changed
+      - name: Check for changes
+        id: detect_changes
         run: |
           if ! git diff --quiet data/events.json; then
+            echo "events_changed=true" >> $GITHUB_OUTPUT
             git config user.name "GitHub Actions"
             git config user.email "actions@github.com"
             git add data/events.json
             git commit -m "Update events from Google Calendar"
             git push
           else
+            echo "events_changed=false" >> $GITHUB_OUTPUT
             echo "No changes to commit."
-          fi
 
+  trigger-hugo:
+    name: Trigger Hugo Build
+    needs: update
+    if: ${{ needs.update.outputs.events_changed == 'true' }}
+    uses: ./.github/workflows/hugo-build.yaml
+    with:
+      triggeredByEventChange: true
+
+    

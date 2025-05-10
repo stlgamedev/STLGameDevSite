@@ -1,15 +1,17 @@
-{{- $today := (now | time.Format "2006-01-02" | time ) -}}
+{{- $today := (now | time ) -}}
 {{- $eventsRaw := .Site.Data.events -}}
 {{- $upcoming := slice -}}
 
 {{ range $event := $eventsRaw }}
-{{- $eventTime := ($event.dateTime | time.Format "2006-01-02" | time ) -}}
+{{- $eventTime := ($event.dateTime | time ) -}}
+{{- $eventTime = $eventTime.Local -}}
 {{- if (ge $eventTime $today) -}}
 {{- $upcoming = $upcoming | append (dict
 "title" $event.title
 "description" $event.description
-"dateTime" (time.AsTime $event.dateTime)
+"dateTime" $eventTime
 "eventUrl" $event.eventUrl
+"where" $event.location
 ) -}}
 {{- end -}}
 {{ end }}
@@ -21,6 +23,7 @@
         <dt class="h4 text-center">{{ $next.title }}</dt>
         <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} – {{ time.Format ":time_short"
             $next.dateTime }}</dt>
+        <dd><em>Where:</em> {{ $next.where }}</dd>
         <dd class="">{{ $next.description | markdownify }}</dd>
         {{ if $next.eventUrl }}
         <dd class="text-center">
