@@ -1,27 +1,42 @@
 const fs = require('fs');
-const ical = require('node-ical');
 const { DateTime } = require('luxon');
+const IcalExpander = require('ical-expander');
 
-(async () => {
-  const data = await ical.parseFile('calendar.ics');
-  const events = [];
+// Read the .ics file
+const icsData = fs.readFileSync('calendar.ics', 'utf8');
 
-  for (const k in data) {
-    const ev = data[k];
-    if (ev.type === 'VEVENT') {
-      // Assume the intended timezone is America/Chicago
-      const dt = DateTime.fromJSDate(ev.start, { zone: 'utc' }).setZone('America/Chicago');
+// Parse it
+const icalExpander = new IcalExpander({ ics: icsData, maxIterations: 1000 });
 
-      events.push({
-        title: ev.summary,
-        description: ev.description || '',
-        location: ev.location || '',
-        // This is now correctly localized to Central Time
-        dateTime: dt.toISO(), // e.g., 2025-05-23T17:00:00.000-05:00
-        eventUrl: ev.url || ''
-      });
-    }
-  }
+// Define time range for events to extract
+const now = new Date();
+const future = new Date(now.getFullYear() + 1, now.getMonth(), now.getDate());
 
-  fs.writeFileSync('data/events.json', JSON.stringify(events, null, 2));
-})();
+// Get expanded events (handles recurrence)
+const { events, occurrences } = icalExpander.between(now, future);
+
+// Combine single and recurring events
+const allEvents = [
+  ...events.map(e => ({
+    title: e.summary,
+    description: e.description || '',
+    location: e.location || '',
+    dateTime: DateTime.fromJSDate(e.startDate.toJSDate(), { zone: e.startDate.zoneName }).toISO(),
+    endTime: DateTime.fromJSDate(e.endDate.toJSDate(), { zone: e.endDate.zoneName }).toISO(),
+    eventUrl: e.url || ''
+  })),
+  ...occurrences.map(({ startDate, endDate, item }) => ({
+    title: item.summary,
+    description: item.description || '',
+    location: item.location || '',
+    dateTime: DateTime.fromJSDate(startDate.toJSDate(), { zone: startDate.zoneName }).toISO(),
+    endTime: DateTime.fromJSDate(endDate.toJSDate(), { zone: endDate.zoneName }).toISO(),
+    eventUrl: item.url || ''
+  }))
+];
+
+// Optional: sort by start time
+allEvents.sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
+
+// Write to events.json
+fs.writeFileSync('data/events.json', JSON.stringify(allEvents, null, 2));
