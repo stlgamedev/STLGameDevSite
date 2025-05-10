@@ -48,7 +48,7 @@ jobs:
         if: needs.check-repo.outputs.is-official == 'true'
         runs-on: ubuntu-latest
         env:
-            HUGO_VERSION: 0.136.5
+            HUGO_VERSION: 0.147.2
         outputs:
             base_url: ${{ steps.pages.outputs.base_url }}
             new_news_items: ${{ steps.compare-new-news.outputs.new_items }}
