@@ -42,6 +42,7 @@ jobs:
           else
             echo "events_changed=false" >> $GITHUB_OUTPUT
             echo "No changes to commit."
+          fi
 
   trigger-hugo:
     name: Trigger Hugo Build
