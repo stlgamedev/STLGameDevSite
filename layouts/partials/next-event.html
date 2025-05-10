@@ -1,9 +1,3 @@
-
-<section class="container">
-    <p>Please Excuse the Mess! We are working on overhauling our Events system.</p>
-    <p>In the meantime, please visit our <a href="https://www.meetup.com/st-louis-game-developers/"><i class="fa-brands fa-meetup"></i> Meetup Group</a> for our upcoming events.</p>
-</section>
-
 {{- $today := (now | time.Format "2006-01-02" | time ) -}}
 {{- $eventsRaw := .Site.Data.events -}}
 {{- $upcoming := slice -}}
