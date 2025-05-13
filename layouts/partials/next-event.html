@@ -23,21 +23,45 @@
 
 {{ if gt (len $upcoming) 0 }}
 {{ $next := index (sort $upcoming "dateTime") 0 }}
-<section class="container my-4">
-    <dl class="p-3 m-0 border rounded">
+<section class="container ">
+    <dl class="p-0 m-0">
         <dt class="h4 text-center">{{ $next.title }}</dt>
         <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} {{ time.Format ":time_short"
             $next.dateTime }} to {{ if ne (time.Format "Jan 2" $next.dateTime) (time.Format "Jan 2" $next.end) -}}<br />{{ time.Format "Jan 2" $next.end }} {{ end -}}{{ time.Format ":time_short" $next.end }}</dt>
         </dt>
-        <dd><em>Where:</em> {{ $next.where }}</dd>
-        <dd class="">{{ $next.description | markdownify }}</dd>
-        {{ if $next.eventUrl }}
-        <dd class="text-center">
-            <a href="{{ $next.eventUrl }}" class="btn btn-outline-primary" target="_blank">
-                <i class="fa-brands fa-meetup"></i> View Event
-            </a>
+        {{- $isLink := hasPrefix $next.where "http" -}}
+        {{- $icon := cond $isLink "🔗" "📍" -}}
+        <dd class="mt-3">
+          <em class="pe-1">Where {{ $icon }}:</em>
+          {{- if $isLink -}}
+            {{- $parsed := urls.Parse $next.where -}}
+            <a href="{{ $next.where }}" target="_blank" rel="noopener">{{ $parsed.Host }}</a>
+          {{- else -}}
+            {{ $next.where }}
+          {{- end }}
         </dd>
-        {{ end }}
+        
+        {{- $description := $next.description | safeHTML -}}
+
+        {{- $matches := findRESubmatch `[<br>]+For full details, including the address, and to RSVP see: <a href="([^"]+)"[^>]*>[^<]+</a>` $description -}}
+
+        {{- if gt (len $matches) 0 -}}
+          {{- $match := index $matches 0 -}}         {{/* first full match group */}}
+          {{- $fullMatch := index $match 0 -}}       {{/* entire match string */}}
+          {{- $url := index $match 1 -}}             {{/* captured URL */}}
+
+          {{- $cleanDescription := replace $description $fullMatch "" -}}
+
+          <dd class="">{{ $cleanDescription | safeHTML }}</dd>
+          <div class="mt-3 text-center">
+            <a href="{{ $url }}" class="btn btn-primary" target="_blank" rel="noopener">RSVP</a>
+          </div>
+        {{- else -}}
+          <dd class="">{{ $description }}</dd>
+        {{- end }}
+
+
+        
     </dl>
 </section>
 {{ else }}

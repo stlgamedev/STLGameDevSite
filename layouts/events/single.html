@@ -65,8 +65,37 @@
                                 <p class="h4 card-text text-center">{{ time.Format "Jan 2" $event.when }} {{ time.Format
                                     ":time_short" $event.when }} to {{ if ne (time.Format "Jan 2" $event.when) (time.Format "Jan 2" $event.end) -}}<br />{{ time.Format "Jan 2" $event.end }} {{ end -}}{{ time.Format
                                         ":time_short" $event.end }}</p>
-                                <p class="card-text"><em>Where:</em> {{ $event.where }}</p>
-                                <p class="card-text">{{ $event.desc }}</p>
+
+                                {{- $isLink := hasPrefix $event.where "http" -}}
+                                {{- $icon := cond $isLink "🔗" "📍" -}}
+                                <p class="card-text">
+                                    <em class="pe-2">Where {{ $icon }}:</em>
+                                    {{- if $isLink -}}
+                                        {{- $parsed := urls.Parse $event.where -}}
+                                        <a href="{{ $event.where }}" target="_blank" rel="noopener">{{ $parsed.Host }}</a>
+                                    {{- else -}}
+                                        {{ $event.where }}
+                                    {{- end }}
+                                </p>
+                                
+                                {{- $description := $event.desc | safeHTML -}}
+
+                                {{- $matches := findRESubmatch `[<br>]+For full details, including the address, and to RSVP see: <a href="([^"]+)"[^>]*>[^<]+</a>` $description -}}
+
+                                {{- if gt (len $matches) 0 -}}
+                                {{- $match := index $matches 0 -}}         {{/* first full match group */}}
+                                {{- $fullMatch := index $match 0 -}}       {{/* entire match string */}}
+                                {{- $url := index $match 1 -}}             {{/* captured URL */}}
+
+                                {{- $cleanDescription := replace $description $fullMatch "" -}}
+
+                                <p class="card-text">{{ $cleanDescription | safeHTML }}</dd>
+                                <div class="mt-3 text-center">
+                                    <a href="{{ $url }}" class="btn btn-primary" target="_blank" rel="noopener">RSVP</a>
+                                </div>
+                                {{- else -}}
+                                    <p class="card-text">{{ $description }}</dd>
+                                {{- end }}
                                 
                             </div>
                         </div>
