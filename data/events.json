@@ -1,10 +1,18 @@
 [
   {
-    "title": "Spring Game Jam 25",
-    "description": "<a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
+    "title": "Spring Game Jam",
+    "description": "<br><h2><span>Spring is almost over already and we're overdue for another game jam! So team up with local creators and make a game over a few weekends (and the week in between)!</span></h2><br><p>This jam will be <strong>virtual only</strong>. <strong><a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a></strong></p><p><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a></p>",
     "location": "https://itch.io/jam/stlgamedev-spring-jam",
     "dateTime": "2025-05-23T18:00:00.000-05:00",
     "endTime": "2025-06-01T19:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spring Jam Work Session",
+    "description": "For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307748696\n\n",
+    "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
+    "dateTime": "2025-05-24T12:00:00.000-05:00",
+    "endTime": "2025-05-24T17:00:00.000-05:00",
     "eventUrl": ""
   },
   {
@@ -16,7 +24,7 @@
     "eventUrl": ""
   },
   {
-    "title": "Game Club",
+    "title": "Game Club: Baba Is You",
     "description": "",
     "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2025-05-26T18:30:00.000-05:00",
