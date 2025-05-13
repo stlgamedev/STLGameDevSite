@@ -1,6 +1,5 @@
 {{ define "header" }}
-<div class="row text-center  simple-bar rounded m-4 p-3 border d-flex justify-content-evenly">
-    {{/* <i class="i corner-icon ci-top-right fa-sharp-duotone fa-solid fa-calendar-days fa-6x "></i> */}}
+<div class="row text-center simple-bar rounded m-4 p-3 border d-flex justify-content-evenly">
     <h1 class="font-weight-light text-center">Upcoming Events</h1>
     <p class="lead text-center">This is a list of our upcoming events</p>
 </div>
@@ -13,80 +12,73 @@
 {{ $genericImg := resources.Get "images/events/event-generic.png" }}
 
 <section class="d-flex flex-column">
-
-    {{- $today := ((time.Format "2006-01-02" time.Now ) | time ) -}}
-
+    {{- $layout := "2006-01-02T15:04:05-07:00" -}}
+    {{- $today := now -}}
+    {{- $today = ($today | time.Format $layout) -}}
+    {{- $today = (time.Format "2006-01-02" $today | time) -}}
+    
     {{- $eventsRaw := .Site.Data.events -}}
     {{- $events := slice -}}
+
     {{- range $eventRaw := $eventsRaw -}}
-    {{- $rawD := ((time.Format "2006-01-02" (index $eventRaw 3) ) | time ) -}}
-    {{- if (ge $rawD $today ) -}}
+    {{- $eventTime := time.AsTime $eventRaw.dateTime | time.Format $layout -}}
+    {{- $endTime := time.AsTime $eventRaw.endTime | time.Format $layout -}}
+    {{- $eventEndDate := (time.Format "2006-01-02" $endTime | time) -}}
+    {{- if (gt $eventEndDate $today) -}}
     {{- $events = $events | append (dict
-    "internal_id" (index $eventRaw 0)
-    "created" (index $eventRaw 1)
-    "name" (index $eventRaw 2)
-    "when" (index $eventRaw 3)
-    "where" (index $eventRaw 4)
-    "meetup" (index $eventRaw 5)
-    "desc" (index $eventRaw 6)
-    )
-    -}}
+    "name" $eventRaw.title
+    "desc" $eventRaw.description
+    "when" $eventTime
+    "where" $eventRaw.location
+    "end" $endTime
+    ) -}}
     {{ end }}
     {{ end }}
 
-    {{- if $events -}}
-
+    {{ if gt (len $events) 0 }}
     {{- $lastDate := "" -}}
-    {{- $lastTime := "" -}}
     {{- range $event := (sort $events "when" "asc") -}}
-        {{- $rawDate := time.AsTime $event.when -}}
-        {{- $eventDate := time.Format "January 2006" $rawDate -}}
-        {{- if (ne $lastDate $eventDate) -}}
-            {{- if (ne $lastDate "") -}}
-        </div>
-        </div>
-        </div>
-        </div>
-        {{- end -}}
-        {{ $lastDate = $eventDate }}
-        <div class="event-month my-3">
-            <h2>{{ $eventDate }}</h2>
+    {{- $rawDate := time.AsTime $event.when -}}
+    {{- $eventDate := time.Format "January 2006" $rawDate -}}
+    {{- if (ne $lastDate $eventDate) -}}
+    {{- if (ne $lastDate "") -}}
+    </div>
+    </div>
+    </div>
+    </div>
+    {{- end -}}
+    {{ $lastDate = $eventDate }}
+    <div class="event-month my-3">
+        <h2>{{ $eventDate }}</h2>
+        <div class="event-list my-3">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    {{ end }}
 
-            <div class="event-list">
-                <div class="container-fluid">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                        {{ end }}
-                        <div class="col d-flex align-items-stretch">
-                            <div class="card border-color-orange">
-
-                                <img src="{{- if strings.Contains $event.name " Social" }}{{ $socialImg.RelPermalink }}
-                                    {{- else if strings.Contains $event.name " Share" }}{{ $demosImg.RelPermalink }}
-                                    {{ else }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
-                                <div class="card-body d-flex flex-column ">
-                                    <p class="h3 card-text text-center">{{ $event.name }}</p>
-                                    <p class="h4 card-text text-center">{{ time.Format "Jan 2" $rawDate }} - {{
-                                        time.Format
-                                        ":time_short" $rawDate }}</p>
-                                    <p class="card-text "><em>Where:</em> {{ $event.where }}</p>
-                                    <p class="card-text ">{{ $event.desc }}</p>
-                                    {{ if $event.meetup }}
-                                    <div class="card-text text-center mt-auto"><a
-                                            href="https://www.meetup.com/st-louis-game-developers/events/{{ $event.meetup }}/"
-                                            class="btn btn-outline-primary" target="_blank"><i class="i fa-brands fa-meetup"></i> RSVP</a>
-                                    </div>
-                                    {{ end }}
-
-
-                                </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card border-color-orange">
+                            <img src="{{- if strings.Contains $event.name "Social" }}{{ $socialImg.RelPermalink }} {{-
+                                else if strings.Contains $event.name "Share & Play" }}{{ $demosImg.RelPermalink }} {{ else
+                                }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
+                            <div class="card-body d-flex flex-column">
+                                <p class="h3 card-text text-center">{{ $event.name }}</p>
+                                <p class="h4 card-text text-center">{{ time.Format "Jan 2" $event.when }} {{ time.Format
+                                    ":time_short" $event.when }} to {{ if ne (time.Format "Jan 2" $event.when) (time.Format "Jan 2" $event.end) -}}<br />{{ time.Format "Jan 2" $event.end }} {{ end -}}{{ time.Format
+                                        ":time_short" $event.end }}</p>
+                                <p class="card-text"><em>Where:</em> {{ $event.where }}</p>
+                                <p class="card-text">{{ $event.desc }}</p>
+                                
                             </div>
                         </div>
-                        {{- end -}}
                     </div>
+                    {{- end -}}
                 </div>
             </div>
         </div>
-    {{- else -}}
-        <p class="text-center">No upcoming events</p>
-    {{- end -}}
+    </div>
+    {{ else }}
+    <p class="text-center">No upcoming events</p>
+    {{ end }}
 </section>
+
 {{- end }}

@@ -5,6 +5,7 @@ draft: false
 tags: ["announcements", "events"]
 authors: ['Tim I Hely', 'SuperWes', 'TimConceivable']
 images: ["images/news/RIP-coop-halloween-5x.png"]
+slug: 'new-site-new-leadership'
 ---
 
 ## Welcome to a new era of game development in St. Louis!

@@ -1,47 +1,45 @@
-{{- $today := ((time.Format "2006-01-02" time.Now ) | time ) -}}
+{{- $layout := "2006-01-02T15:04:05-07:00" -}}
 
-{{ $drinkupImg := resources.Get "images/events/event-drinkup.png" }}
-{{ $genericImg := resources.Get "images/events/event-generic.png" }}
+{{- $today := now | time.Format $layout -}}
 
+{{- $eventsRaw := .Site.Data.events -}}
+{{- $upcoming := slice -}}
 
-    {{- $eventsRaw := .Site.Data.events -}}
-    {{- $events := slice -}}
-    {{- range $eventRaw := $eventsRaw -}}
-    {{- $rawD := ((time.Format "2006-01-02" (index $eventRaw 3) ) | time ) -}}
-    {{- if (ge $rawD $today ) -}}
-    {{- $events = $events | append (dict
-    "internal_id" (index $eventRaw 0)
-    "created" (index $eventRaw 1)
-    "name" (index $eventRaw 2)
-    "when" (index $eventRaw 3)
-    "where" (index $eventRaw 4)
-    "meetup" (index $eventRaw 5)
-    "desc" (index $eventRaw 6)
-    )
-    -}}
-    {{ end }}
-    {{ end }}
+{{- range $event := $eventsRaw }}
+  {{- $eventTime := time.AsTime $event.dateTime | time.Format $layout -}}
+  {{- $endTime := time.AsTime $event.endTime | time.Format $layout -}}
 
-    {{- if $events -}}
+  {{- if ge $eventTime $today -}}
+    {{- $upcoming = $upcoming | append (dict
+      "title" $event.title
+      "description" $event.description
+      "dateTime" $eventTime
+      "eventUrl" $event.eventUrl
+      "where" $event.location
+      "end" $endTime
+    ) -}}
+  {{- end -}}
+{{- end }}
 
-    {{- range $event := first 1 (sort $events "when" "asc") -}}
-    <img src="{{- if strings.Contains $event.name "DrinkUp" }}{{ $drinkupImg.RelPermalink }}{{ else }}{{ $genericImg.RelPermalink }}{{ end }}" class="img-fluid" alt="Event Image">
-        <dl class="p-3 m-0">
-            
-            <dt class="h4 text-center">{{ $event.name }}</dt>
-            <dt class="h3 text-center">{{ time.Format ":date_short" $event.when }} - {{ time.Format ":time_short" $event.when }}</dt>
-            <dd class=""><em>Where:</em> {{ $event.where }}</dd>
-            <dd class="">{{ $event.desc }}</dd>
-            {{ if $event.meetup }}
-            <dd class="text-center"><a href="https://www.meetup.com/st-louis-game-developers/events/{{ $event.meetup }}/" class="btn btn-outline-primary" target="_blank"><i class="i fa-brands fa-meetup"></i> RSVP</a></dd>
-            {{ end }}
-
-        </dl>
-
-    {{ end}}
-    
-{{- else -}}
-
-    <p class="text-center">No upcoming events</p>
-
-{{- end -}}
+{{ if gt (len $upcoming) 0 }}
+{{ $next := index (sort $upcoming "dateTime") 0 }}
+<section class="container my-4">
+    <dl class="p-3 m-0 border rounded">
+        <dt class="h4 text-center">{{ $next.title }}</dt>
+        <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} {{ time.Format ":time_short"
+            $next.dateTime }} to {{ if ne (time.Format "Jan 2" $next.dateTime) (time.Format "Jan 2" $next.end) -}}<br />{{ time.Format "Jan 2" $next.end }} {{ end -}}{{ time.Format ":time_short" $next.end }}</dt>
+        </dt>
+        <dd><em>Where:</em> {{ $next.where }}</dd>
+        <dd class="">{{ $next.description | markdownify }}</dd>
+        {{ if $next.eventUrl }}
+        <dd class="text-center">
+            <a href="{{ $next.eventUrl }}" class="btn btn-outline-primary" target="_blank">
+                <i class="fa-brands fa-meetup"></i> View Event
+            </a>
+        </dd>
+        {{ end }}
+    </dl>
+</section>
+{{ else }}
+<p class="text-center">No upcoming events</p>
+{{ end }}
