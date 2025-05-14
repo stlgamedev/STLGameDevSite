@@ -1,10 +1,18 @@
 [
   {
-    "title": "Spring Game Jam 25",
-    "description": "<a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
+    "title": "Spring Game Jam",
+    "description": "Spring is almost over already and we're overdue for another game jam! So team up with local creators and make a game over a few weekends (and the week in between)!<br><br>This jam will be virtual only. <a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
     "location": "https://itch.io/jam/stlgamedev-spring-jam",
     "dateTime": "2025-05-23T18:00:00.000-05:00",
     "endTime": "2025-06-01T19:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spring Jam Work Session",
+    "description": "The <b><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></b> is virtual, but we decided to have an in-person get together anyway. We would like to encourage everyone to collaborate with local devs in person if possible. We think jamming in person is just more fun. Come hang out with fellow jammers and work on your games at the library!<br><br><b>We will be in Meeting Room 2.</b><br><br>If you haven't already, <a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\"><b>SIGN UP FOR THE JAM ON ITCH.IO</b></a>!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307748696\">https://www.meetup.com/st-louis-game-developers/events/307748696</a>",
+    "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
+    "dateTime": "2025-05-24T12:00:00.000-05:00",
+    "endTime": "2025-05-24T17:00:00.000-05:00",
     "eventUrl": ""
   },
   {
@@ -16,7 +24,7 @@
     "eventUrl": ""
   },
   {
-    "title": "Game Club",
+    "title": "Game Club: Baba Is You",
     "description": "",
     "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2025-05-26T18:30:00.000-05:00",
