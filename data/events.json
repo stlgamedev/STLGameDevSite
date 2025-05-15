@@ -142,5 +142,13 @@
     "dateTime": "2025-08-09T09:30:00.000-05:00",
     "endTime": "2025-08-09T16:30:00.000-05:00",
     "eventUrl": ""
+  },
+  {
+    "title": "GameDev Social!",
+    "description": "For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307069688\n\n",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2025-08-14T19:00:00.000-05:00",
+    "endTime": "2025-08-14T22:00:00.000-05:00",
+    "eventUrl": ""
   }
 ]
