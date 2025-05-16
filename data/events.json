@@ -1,15 +1,15 @@
 [
   {
     "title": "Spring Game Jam",
-    "description": "Spring is almost over already and we're overdue for another game jam! So team up with local creators and make a game over a few weekends (and the week in between)!<br><br>This jam will be virtual only. <a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
+    "description": "Team up with local creators and make a game over a few weekends (and the week in between)! This jam will be <b>mostly virtual</b>. <b><a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a></b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
     "location": "https://itch.io/jam/stlgamedev-spring-jam",
     "dateTime": "2025-05-23T18:00:00.000-05:00",
     "endTime": "2025-06-01T19:00:00.000-05:00",
     "eventUrl": ""
   },
   {
-    "title": "Spring Jam Work Session",
-    "description": "The <b><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></b> is virtual, but we decided to have an in-person get together anyway. We would like to encourage everyone to collaborate with local devs in person if possible. We think jamming in person is just more fun. Come hang out with fellow jammers and work on your games at the library!<br><br><b>We will be in Meeting Room 2.</b><br><br>If you haven't already, <a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\"><b>SIGN UP FOR THE JAM ON ITCH.IO</b></a>!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307748696\">https://www.meetup.com/st-louis-game-developers/events/307748696</a>",
+    "title": "Spring Jam Work Session 1",
+    "description": "The <b><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></b> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library!  <b>We will be in Meeting Room 2.</b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307748696\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307748696</a>",
     "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
     "dateTime": "2025-05-24T12:00:00.000-05:00",
     "endTime": "2025-05-24T17:00:00.000-05:00",
@@ -29,6 +29,14 @@
     "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2025-05-26T18:30:00.000-05:00",
     "endTime": "2025-05-26T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spring Jam Work Session 2",
+    "description": "<p>The <strong><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></strong> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library! <strong>We will be in Meeting Room 2.</strong></p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307824136",
+    "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
+    "dateTime": "2025-05-29T16:00:00.000-05:00",
+    "endTime": "2025-05-29T20:00:00.000-05:00",
     "eventUrl": ""
   },
   {
@@ -137,7 +145,7 @@
   },
   {
     "title": "SciFest: Play and Creativity Expo",
-    "description": "\n&nbsp; \nWelcome to SciFest: Play and Creativity Expo\n\n \n“Play is fundamentally important for learning 21st century skills, such as problem solving, collaboration, and creativity.” ~ American Academy of Pediatrics\n\n&nbsp; \nSchedule Coming in 2025! \n&nbsp; \n\n \n“The creation of something new is not accomplished by the intellect but by the play instinct.” ~ Carl Jung\n\n&nbsp; \nShare your SciFest experiences with #SciFestSTL \n&nbsp; \n\n \n“Play is not frivolous; it is brain building.”~ American Academy of Pediatrics\n\n&nbsp; \n\nMark your calendar and join us for our  2025 SciFest events\n\nFebruary 22, 2025: Engineering Expo\nMay 10, 2025: The Great Outdoors Expo\nAugust 9, 2025: Play and Creativity Expo\nNovember 15, 2025: Sci-FEAST\n\n\n&nbsp; \nSciFest: Connect with Science, Technology, Engineering and Math (STEM) professionals gathered exclusively for a series of day-long science and technology themed events.  Meet local scientists, engineers and other experts for a personal, close (View Full Event Description Here: https://www.slsc.org/event/scifest-play-and-creativity-expo/)",
+    "description": "SciFest: Connect with Science, Technology, Engineering and Math (STEM) professionals gathered exclusively for a series of day-long science and technology themed events.  Meet local scientists, engineers and other experts for a personal, close (View Full Event Description Here: https://www.slsc.org/event/scifest-play-and-creativity-expo/)",
     "location": "",
     "dateTime": "2025-08-09T09:30:00.000-05:00",
     "endTime": "2025-08-09T16:30:00.000-05:00",
