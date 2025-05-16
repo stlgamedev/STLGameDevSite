@@ -51,7 +51,7 @@
         {{- if gt (len $matches) 0 -}}
           {{- $firstMatch := index $matches 0 -}}          {{/* the inner []string */}}
           {{- $fullMatch := index $firstMatch 0 -}}        {{/* full matched string */}}
-          {{- $eventID := index $firstMatch 1 -}}          {{/* captured group with event ID */}}
+          {{- $eventID := index $firstMatch 2 -}}          {{/* captured group with event ID */}}
 
           {{- $cleanDescription := replace $description $fullMatch "" -}}
 
