@@ -1,7 +1,7 @@
 [
   {
     "title": "Spring Game Jam",
-    "description": "Team up with local creators and make a game over a few weekends (and the week in between)! This jam will be <b>mostly virtual</b>. <b><a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a></b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
+    "description": "Team up with local creators and make a game over a few weekends (and the week in between)! This jam will be <b>mostly virtual</b>. <b><a href=\"https://itch.io/jam/stlgamedev-spring-jam\" target=\"_blank\">SIGN UP ON ITCH.IO!</a></b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
     "location": "https://itch.io/jam/stlgamedev-spring-jam",
     "dateTime": "2025-05-23T18:00:00.000-05:00",
     "endTime": "2025-06-01T19:00:00.000-05:00",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Spring Jam Work Session 1",
-    "description": "The <b><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></b> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library!  <b>We will be in Meeting Room 2.</b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307748696\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307748696</a>",
+    "description": "The <b><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></b> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library!  <b>We will be in Meeting Room 2.</b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307748696/\">https://www.meetup.com/st-louis-game-developers/events/307748696/</a>",
     "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
     "dateTime": "2025-05-24T12:00:00.000-05:00",
     "endTime": "2025-05-24T17:00:00.000-05:00",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Game Audio Club",
-    "description": "",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio.<br>We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio.<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\">https://www.meetup.com/st-louis-game-developers/events/307433670/</a>",
     "location": "MAP St. Louis, 3840 Washington Ave, St. Louis, MO 63108, USA",
     "dateTime": "2025-05-24T16:00:00.000-05:00",
     "endTime": "2025-05-24T19:00:00.000-05:00",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Game Club: Baba Is You",
-    "description": "",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is <a href=\"https://store.steampowered.com/app/736260/Baba_Is_You/\" target=\"_blank\"><b>Baba Is You</b></a>, a brilliant puzzle game! Come share your thoughts on the game with us!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307697799/\">https://www.meetup.com/st-louis-game-developers/events/307697799/</a>",
     "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2025-05-26T18:30:00.000-05:00",
     "endTime": "2025-05-26T20:30:00.000-05:00",
@@ -33,130 +33,26 @@
   },
   {
     "title": "Spring Jam Work Session 2",
-    "description": "<p>The <strong><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></strong> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library! <strong>We will be in Meeting Room 2.</strong></p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307824136",
+    "description": "<p>The <strong><a href=\"https://www.meetup.com/st-louis-game-developers/events/307433670/\" target=\"_blank\">Spring Game Jam</a></strong> is virtual, but we decided to have an in-person get together anyway. Come hang out with fellow jammers and work on your games at the library! <strong>We will be in Meeting Room 2.</strong></p>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307824136/\">https://www.meetup.com/st-louis-game-developers/events/307824136/</a>",
     "location": "St. Louis County Library Grand Glaize Branch  - 1010 Meramec Station Rd - Manchester, MO, us",
     "dateTime": "2025-05-29T16:00:00.000-05:00",
     "endTime": "2025-05-29T20:00:00.000-05:00",
     "eventUrl": ""
   },
   {
+    "title": "Spring Jam Game Demos",
+    "description": "Spring Jam game demos will be streamed live online on our <a href=\"https://www.twitch.tv/STLGameDev\" target=\"_blank\">Twitch</a> channel",
+    "location": "https://www.twitch.tv/STLGameDev",
+    "dateTime": "2025-06-01T18:00:00.000-05:00",
+    "endTime": "2025-06-01T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "Share & Play",
-    "description": "",
+    "description": "Join us for casual game testing! This is an opportunity for developers to share their progress, observe playtesting, and get feedback on their projects, and for local game enthusiasts to get their hands on new games, prototypes, and give helpful feedback.<b> We will be in Meeting Room 2 in the library.</b><br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307697634/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307697634/</a>",
     "location": "St. Louis County Library–Grand Glaize Branch, 1010 Meramec Station Road, Manchester, MO 63021, USA",
     "dateTime": "2025-06-07T14:00:00.000-05:00",
     "endTime": "2025-06-07T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "GameDev Social!",
-    "description": "For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307069688\n\n",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-06-12T19:00:00.000-05:00",
-    "endTime": "2025-06-12T22:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Game Audio Club",
-    "description": "",
-    "location": "MAP St. Louis, 3840 Washington Ave, St. Louis, MO 63108, USA",
-    "dateTime": "2025-06-28T16:00:00.000-05:00",
-    "endTime": "2025-06-28T19:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Game Club",
-    "description": "",
-    "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
-    "dateTime": "2025-06-30T18:30:00.000-05:00",
-    "endTime": "2025-06-30T20:30:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "GameDev Social!",
-    "description": "For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307069688\n\n",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-07-10T19:00:00.000-05:00",
-    "endTime": "2025-07-10T22:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Making Narrative Games with Twine- Kelsey Watkins",
-    "description": "",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-15T18:00:00.000-05:00",
-    "endTime": "2025-07-15T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Art Principles for Games- Brendan Steppig",
-    "description": "",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-16T18:00:00.000-05:00",
-    "endTime": "2025-07-16T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Simple Audio Tools for Games- Lazarus Richardson",
-    "description": "",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-24T18:00:00.000-05:00",
-    "endTime": "2025-07-24T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "SLPL Game Jam",
-    "description": "Held in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-26T10:00:00.000-05:00",
-    "endTime": "2025-07-26T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "MO Game Con",
-    "description": "",
-    "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
-    "dateTime": "2025-07-26T11:00:00.000-05:00",
-    "endTime": "2025-07-26T18:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Game Audio Club",
-    "description": "",
-    "location": "MAP St. Louis, 3840 Washington Ave, St. Louis, MO 63108, USA",
-    "dateTime": "2025-07-26T16:00:00.000-05:00",
-    "endTime": "2025-07-26T19:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "SLPL Game Jam",
-    "description": "Game Showcase\nHeld in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-27T14:00:00.000-05:00",
-    "endTime": "2025-07-27T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Game Club",
-    "description": "",
-    "location": "QDOBA Mexican Eats, 766 N New Ballas Rd, Creve Coeur, MO 63141, USA",
-    "dateTime": "2025-07-28T18:30:00.000-05:00",
-    "endTime": "2025-07-28T20:30:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "SciFest: Play and Creativity Expo",
-    "description": "SciFest: Connect with Science, Technology, Engineering and Math (STEM) professionals gathered exclusively for a series of day-long science and technology themed events.  Meet local scientists, engineers and other experts for a personal, close (View Full Event Description Here: https://www.slsc.org/event/scifest-play-and-creativity-expo/)",
-    "location": "",
-    "dateTime": "2025-08-09T09:30:00.000-05:00",
-    "endTime": "2025-08-09T16:30:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "GameDev Social!",
-    "description": "For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307069688\n\n",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-08-14T19:00:00.000-05:00",
-    "endTime": "2025-08-14T22:00:00.000-05:00",
     "eventUrl": ""
   }
 ]
