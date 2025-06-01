@@ -53,8 +53,8 @@ Everyone of any skill level is welcome to participate!
 - **Sunday, May 25th - Saturday, June 1st**
   : **All Day** - Jam away!
 - **Sunday, June 1st**
-  : **5:00 pm** - Game submission deadline
-  : **7:00 pm** - Game demos streamed online on [Twitch](https://www.twitch.tv/STLGameDev)
+  : **4:00 pm** - Game submission deadline
+  : **6:00 pm** - Game demos streamed online on [Twitch](https://www.twitch.tv/STLGameDev)
 
 We look forward to making something awesome with you!
 
