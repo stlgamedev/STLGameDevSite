@@ -12,9 +12,11 @@ The Q2 Share and Play featured eight games, ranging from games made in ten hours
 
 A huge thank you to everyone who came out to see these incredible games! If you didn't get a chance to play these titles, many of them are free to play right now on [itch.io](https://itch.io/jam/stlgamedev-spring-jam/entries)!
 
+###
+
 ***
 
-## ✨ Here are the eight games that were featured:
+### ✨ Here are the eight games that were featured:
 
 <center><img src="images/stlouis-share-and-play-q2-2025-06.png"  width="66%" alt="Untitled game by Luke Puchner-Hardman"></center>
 
@@ -42,7 +44,7 @@ A huge thank you to everyone who came out to see these incredible games! If you 
 
 ***
 
-<center><img src="images/stlouis-share-and-play-q2-2025-04.png" width="66%" alt="Birds of a Feather by Lucy the Pirate, Colin Shulte, and Walpang"></center>
+<center><img src="images/stlouis-share-and-play-q2-2025-04.png" width="66%" alt="ReFL3cT by Seth Coster"></center>
 
 - *Seth Coster* made [*ReFL3cT*](https://bscotchseth.itch.io/refl3ct) in ten hours with no artist for the 2025 Spring Jam! Using the UI framework from their new title Crashlands 2, he was able to make a password memorization game with categories of characters! He has written an in-depth dive into what all he learned from the experience that you can read here! 
 
