@@ -12,7 +12,7 @@ The Q2 Share and Play featured eight games, ranging from games made in ten hours
 
 A huge thank you to everyone who came out to see these incredible games! If you didn't get a chance to play these titles, many of them are free to play right now on [itch.io](https://itch.io/jam/stlgamedev-spring-jam/entries)!
 
-###
+<!--more-->
 
 ***
 
