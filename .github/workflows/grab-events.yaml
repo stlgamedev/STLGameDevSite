@@ -6,7 +6,24 @@ on:
   workflow_dispatch:     # Allow manual trigger
 
 jobs:
+  check-repo:
+    runs-on: ubuntu-latest
+    outputs:
+        is-official: ${{ steps.set.outputs.is-official }}
+    steps:
+        -   name: Check if running on stlgamedev/STLGameDevSite
+            id: set
+            run: |
+                if [[ "${GITHUB_REPOSITORY}" == "stlgamedev/STLGameDevSite" ]]; then
+                    echo "Running in official repo."
+                    echo "is-official=true" >> $GITHUB_OUTPUT
+                else
+                    echo "⚠️ This workflow runs only on the main stlgamedev/STLGameDevSite repo. Skipping..."
+                    echo "is-official=false" >> $GITHUB_OUTPUT
+                fi
   update:
+    needs: check-repo
+    if: needs.check-repo.outputs.is-official == 'true'
     runs-on: ubuntu-latest
     outputs:
       events_changed: ${{ steps.detect_changes.outputs.events_changed }}
