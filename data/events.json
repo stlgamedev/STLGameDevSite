@@ -6,5 +6,61 @@
     "dateTime": "2025-07-10T19:00:00.000-05:00",
     "endTime": "2025-07-10T22:00:00.000-05:00",
     "eventUrl": ""
+  },
+  {
+    "title": "Making Narrative Games with Twine- Kelsey Watkins",
+    "description": "Kelsey Watkins will be leading a class on <a href=\"https://slpl.bibliocommons.com/events/68223a2f0e718812d2cd7c30\"><u>Making Narrative Games with Twine</u></a> on July 15th at 6:00pm. Learn how to use Twine to create games where players choose what happens next - no coding experience required!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> on July 26th!",
+    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
+    "dateTime": "2025-07-15T18:00:00.000-05:00",
+    "endTime": "2025-07-15T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Art Principles for Games- Brendan Steppig",
+    "description": "Looloopaa will be teaching a class on <a href=\"https://slpl.bibliocommons.com/events/68223a7b196202b54018c826\"><u>Art Principles for Games</u></a> on July 16th at 6:00pm! Learn about color, shape, composition, and how to create characters and environments that bring your game world to life!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u><u>Summer Library Game Jam</u></u></a> on July 26th!",
+    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
+    "dateTime": "2025-07-16T18:00:00.000-05:00",
+    "endTime": "2025-07-16T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Simple Audio Tools for Games- Lazarus Richardson",
+    "description": "Lazarus D. Richardson will be demonstrating <a href=\"https://slpl.bibliocommons.com/events/68223b59196202b54018c83e\"><u>Simple Audio Tools for Games</u></a> on July 24th at 6:00pm. Learn how to create sound effects and music that bring games to life!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\" target=\"_blank\"><u><u><u>Summer Library Game Jam</u></u></u></a> on July 26th!",
+    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
+    "dateTime": "2025-07-24T18:00:00.000-05:00",
+    "endTime": "2025-07-24T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "SLPL Game Jam",
+    "description": "St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> will take place on July 26th for a quick one day game jam starting at 10:00am, with a <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf419\"><u>showcase on the 27th</u></a> starting at 2:00PM! <br><br>Check our Upcoming Events for a series of Educational talks leading up to this event!<br><br>Held in the Creative Experience Lab",
+    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
+    "dateTime": "2025-07-26T10:00:00.000-05:00",
+    "endTime": "2025-07-26T17:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "MoGameCon 2025",
+    "description": "Missouri's largest video game convention has invited STLGameDev to demo games made by members of our community all day long!  If you have a game you'd like us to demo for you, fill out our <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfmG3YeRqL0HYdJfT4CJNvNXrYQry4lRntCRaTrnCjtdKqq9Q/viewform\">submission form</a>!",
+    "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
+    "dateTime": "2025-07-26T11:00:00.000-05:00",
+    "endTime": "2025-07-26T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "SLPL Game Jam Showcase",
+    "description": "Attendees of the SLPL Game Jam can show off the games that they made!\n\nHeld in the Creative Experience Lab",
+    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
+    "dateTime": "2025-07-27T14:00:00.000-05:00",
+    "endTime": "2025-07-27T17:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "July Game Club",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/308786221",
+    "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
+    "dateTime": "2025-07-28T18:30:00.000-05:00",
+    "endTime": "2025-07-28T20:30:00.000-05:00",
+    "eventUrl": ""
   }
 ]
