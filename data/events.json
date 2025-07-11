@@ -1,13 +1,5 @@
 [
   {
-    "title": "July GameDev Social!",
-    "description": "Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307236091",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-07-10T19:00:00.000-05:00",
-    "endTime": "2025-07-10T22:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Making Narrative Games with Twine- Kelsey Watkins",
     "description": "Kelsey Watkins will be leading a class on <a href=\"https://slpl.bibliocommons.com/events/68223a2f0e718812d2cd7c30\"><u>Making Narrative Games with Twine</u></a> on July 15th at 6:00pm. Learn how to use Twine to create games where players choose what happens next - no coding experience required!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> on July 26th!",
     "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
@@ -56,8 +48,8 @@
     "eventUrl": ""
   },
   {
-    "title": "July Game Club",
-    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/308786221",
+    "title": "Game Club: A Short Hike",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is... the wonderful little cozy game, <strong><a href=\"https://store.steampowered.com/app/1055540/A_Short_Hike/\" target=\"_blank\">A Short Hike</a></strong>.  Come share your thoughts on the game with us!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/308786221\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/308786221</a>",
     "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
     "dateTime": "2025-07-28T18:30:00.000-05:00",
     "endTime": "2025-07-28T20:30:00.000-05:00",
