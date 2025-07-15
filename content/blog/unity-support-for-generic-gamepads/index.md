@@ -7,7 +7,7 @@ authors: ['Tim I Hely', 'Colin (miniscule)']
 images: ["images/blog/pexels-tima-miroshnichenko.jpg"]
 ---
 
-Out-of-the-box, Unity (among other engines) seems to only want to use Xinput-devices for inputs (like gamepads) in the Input Manage, which means that it doesn't know how to talk to older, generic input devices by default. We learned this the hard way while trying to set up our Demo Arcade Machine.
+Out-of-the-box, Unity (among other engines) seems to only want to use Xinput-devices for inputs (like gamepads) in the Input Manager, which means that it doesn't know how to talk to older, generic input devices by default. We learned this the hard way while trying to set up our Demo Arcade Machine.
 
 After some experimentation, Colin (miniscule) figured out a solution which, even if you are not submitting a game for us to use in out demos, we still want to show you how to fix so that anyone, with any kind of controller, can play your game.
 
