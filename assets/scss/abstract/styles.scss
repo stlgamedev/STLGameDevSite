@@ -260,3 +260,13 @@ header {
         display: inline !important;
     }
 }
+
+pre  {
+    background-color: black;
+    padding: 1rem;
+    code {
+        word-break:normal;
+    }
+}
+
+

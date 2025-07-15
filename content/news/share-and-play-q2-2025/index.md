@@ -16,7 +16,7 @@ A huge thank you to everyone who came out to see these incredible games! If you 
 
 ***
 
-### ✨ Here are the eight games that were featured:
+## ✨ Here are the eight games that were featured:
 
 <center><img src="images/stlouis-share-and-play-q2-2025-06.png"  width="66%" alt="Untitled game by Luke Puchner-Hardman"></center>
 
