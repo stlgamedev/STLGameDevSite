@@ -1,21 +1,5 @@
 [
   {
-    "title": "SLPL Game Jam",
-    "description": "St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> will take place on July 26th for a quick one day game jam starting at 10:00am, with a <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf419\"><u>showcase on the 27th</u></a> starting at 2:00PM! <br><br>Check our Upcoming Events for a series of Educational talks leading up to this event!<br><br>Held in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-26T10:00:00.000-05:00",
-    "endTime": "2025-07-26T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "MoGameCon 2025",
-    "description": "Missouri's largest video game convention has invited STLGameDev to demo games made by members of our community all day long!  If you have a game you'd like us to demo for you, fill out our <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfmG3YeRqL0HYdJfT4CJNvNXrYQry4lRntCRaTrnCjtdKqq9Q/viewform\">submission form</a>!",
-    "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
-    "dateTime": "2025-07-26T11:00:00.000-05:00",
-    "endTime": "2025-07-26T18:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "SLPL Game Jam Showcase",
     "description": "Attendees of the SLPL Game Jam can show off the games that they made!\n\nHeld in the Creative Experience Lab",
     "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
