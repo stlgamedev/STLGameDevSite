@@ -1,18 +1,26 @@
 [
   {
-    "title": "SLPL Game Jam Showcase",
-    "description": "Attendees of the SLPL Game Jam can show off the games that they made!\n\nHeld in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-27T14:00:00.000-05:00",
-    "endTime": "2025-07-27T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Game Club: A Short Hike",
     "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is... the wonderful little cozy game, <strong><a href=\"https://store.steampowered.com/app/1055540/A_Short_Hike/\" target=\"_blank\">A Short Hike</a></strong>.  Come share your thoughts on the game with us!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/308786221\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/308786221</a>",
     "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
     "dateTime": "2025-07-28T18:30:00.000-05:00",
     "endTime": "2025-07-28T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Audio Club: Music Show & Tell!",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/310012854",
+    "location": "MAP St. Louis Montessori School - 3840 Washington Ave - St. Louis, MO, us",
+    "dateTime": "2025-07-30T17:30:00.000-05:00",
+    "endTime": "2025-07-30T19:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "SciFest: Play and Creativity Expo",
+    "description": "<strong>SciFest: </strong>Connect with Science, Technology, Engineering and Math (STEM) professionals gathered exclusively for a series of day-long science and technology themed events.  Meet local scientists, engineers and other experts for a personal, close-up look at cutting-edge, creative STEM applications <br>(View Full Event Description Here: <a href=\"https://www.slsc.org/event/scifest-play-and-creativity-expo/\" target=\"_blank\">https://www.slsc.org/event/scifest-play-and-creativity-expo/</a>)",
+    "location": "",
+    "dateTime": "2025-08-09T09:30:00.000-05:00",
+    "endTime": "2025-08-09T16:30:00.000-05:00",
     "eventUrl": ""
   },
   {
