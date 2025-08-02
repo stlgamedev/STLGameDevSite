@@ -2,17 +2,25 @@
   {
     "title": "SciFest: Play and Creativity Expo",
     "description": "<strong>SciFest: </strong>Connect with Science, Technology, Engineering and Math (STEM) professionals gathered exclusively for a series of day-long science and technology themed events.  Meet local scientists, engineers and other experts for a personal, close-up look at cutting-edge, creative STEM applications <br>(View Full Event Description Here: <a href=\"https://www.slsc.org/event/scifest-play-and-creativity-expo/\" target=\"_blank\">https://www.slsc.org/event/scifest-play-and-creativity-expo/</a>)",
-    "location": "",
+    "location": "Saint Louis Science Center, 5050 Oakland Ave, St. Louis, MO 63110, USA",
     "dateTime": "2025-08-09T09:30:00.000-05:00",
     "endTime": "2025-08-09T16:30:00.000-05:00",
     "eventUrl": ""
   },
   {
-    "title": "GameDev Social!",
-    "description": "<p>Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. Alcoholic drinks are 100% optional. Dirty 20 has plenty of non-alcoholic drink options, yummy mac n' cheeses, and other munchies if you get hungry.</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307236092",
+    "title": "August GameDev Social!",
+    "description": "<p>Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE!</p>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/307236092\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/307236092</a>",
     "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
     "dateTime": "2025-08-14T19:00:00.000-05:00",
     "endTime": "2025-08-14T22:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Club: Diaries of a Spaceport Janitor",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is... <strong><a href=\"https://store.steampowered.com/app/436500/Diaries_of_a_Spaceport_Janitor/\" target=\"_blank\">Diaries of a Spaceport Janitor</a></strong>, an anti-adventure game about picking up trash in an alien bazaar!<br><br>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/310310847",
+    "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
+    "dateTime": "2025-08-25T18:30:00.000-05:00",
+    "endTime": "2025-08-25T20:30:00.000-05:00",
     "eventUrl": ""
   },
   {
