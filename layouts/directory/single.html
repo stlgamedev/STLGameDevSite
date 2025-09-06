@@ -5,7 +5,9 @@
 
     <h1 class="font-weight-light text-center">Developer Directory</h1>
     <p class="lead text-center">This is a list of developers in our community!</p>
-    <p class="text-center">If you would like to add your own project(s) to this list, follow the directions on our website's <a href="https://github.com/stlgamedev/STLGameDevSite" target="_blank"><i class="i fa-brands fa-github"></i> repository!</a></p>
+    <p class="text-center">If you would like to add your own project(s) to this list, follow the directions on our
+        website's <a href="https://github.com/stlgamedev/STLGameDevSite" target="_blank"><i
+                class="i fa-brands fa-github"></i> repository!</a></p>
 
 </div>
 {{ end }}
@@ -18,33 +20,39 @@
 <section class="d-flex flex-column justify-content-around flex-wrap">
     <div class="bg-blur card my-3">
         <div class="card-header">
-            <h2>{{ if $directoryItem.Logo }}
-                {{ $logo := resources.Get (printf "images/directory/%s" $directoryItem.Logo ) }}
-                {{ $logo := $logo.Fill "60x60" }}
-                {{ $logoLink := $logo.RelPermalink }}
-                <img src="{{ $logoLink }}" class="rounded-circle me-2" />{{ end }}
-                {{ if $directoryItem.Website }}
-                    <a href="{{ $directoryItem.Website }}" target="_blank"> {{ $directoryItem.Name }} </a>
-                {{ else }}
-                    {{ $directoryItem.Name }} 
-                {{ end }}
-            </h2>
-            
-                {{ if $directoryItem.Description}}
-                <dd>{{ $directoryItem.Description }}</dd>
-                {{ end}}
-            
-        </div>
-        <div class="card-body ">
+            <div class="d-flex align-items-center py-2">
+                <div>
+                    {{ if $directoryItem.Logo }}
+                    {{ $logo := resources.Get (printf "images/directory/%s" $directoryItem.Logo ) }}
+                    {{ $logo := $logo.Fit "120x120" }}
+                    {{ $logoLink := $logo.RelPermalink }}
+                    <img src="{{ $logoLink }}" class="pe-4 " />{{ end }}
+                </div>
+                <div>
+                    <h2>
+                        {{ if $directoryItem.Website }}
+                        <a href="{{ $directoryItem.Website }}" target="_blank"> {{ $directoryItem.Name }} </a>
+                        {{ else }}
+                        {{ $directoryItem.Name }}
+                        {{ end }}
+                    </h2>
+
+                    {{ if $directoryItem.Description}}
+                    <dd>{{ $directoryItem.Description }}</dd>
+                    {{ end}}
+                </div>
+
+            </div>
+            <div class="card-body ">
                 <h3>Projects</h3>
                 <div class="vstack gap-3">
-                {{- range $directoryItem.Projects }}
-                {{ partial "showcase.html" . }}
-                {{ end -}}
+                    {{- range $directoryItem.Projects }}
+                    {{ partial "showcase.html" . }}
+                    {{ end -}}
                 </div>
-                </div>
-                </div>
-                </section>
+            </div>
+        </div>
+</section>
 {{- end -}}
 {{- end -}}
 {{- end -}}

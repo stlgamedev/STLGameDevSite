@@ -1,0 +1,9 @@
+Name: 'Ducks in a Row'
+Description: "Help Mama Duck navigate parks, factories, and more in this super cute puzzler, and bring all her baby ducks home!"
+Links:
+  - URL: 'https://store.steampowered.com/app/2808260/Ducks_in_a_Row/'
+    Tooltip: 'Steam'
+    Icon: "fa-brands fa-steam"
+  - URL: 'https://goofy-gourd-studios.itch.io/ducks-in-a-row'
+    Tooltip: 'Itch.io'
+    Icon: "fa-brands fa-itch-io"

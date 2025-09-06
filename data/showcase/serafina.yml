@@ -1,0 +1,15 @@
+Name: "Serafina's Saga: Awakened"
+Description: "In this otome-style visual novel, journey from the depths of the jungle to the royal halls of Castle Krondolee. Young Serafina must uncover the dark secrets of her past and choose whom to trust in this dramatic adventure of romance and intrigue."
+Links:
+  - URL: 'https://woodsy-studio.com/serafina-saga-awakened/'
+    Tooltip: 'Official Website'
+    Icon: "fa-sharp-duotone fa-solid fa-link"
+  - URL: 'https://store.steampowered.com/app/2369430/Serafinas_Saga_Awakened/'
+    Tooltip: 'Steam'
+    Icon: "fa-brands fa-steam"
+  - URL: 'https://woodsy-studio.itch.io/serafinas-saga-awakened'
+    Tooltip: 'Itch.io'
+    Icon: "fa-brands fa-itch-io"
+  - URL: 'https://store.epicgames.com/en-US/p/serafinas-saga-awakened-921f2a'
+    Tooltip: 'Epic Games Store'
+    Icon: "fa-sharp-duotone fa-solid fa-store"
