@@ -2,7 +2,7 @@
 <article class="card my-3">
     <div class="punctuation-icon">
         {{ partial "stlgd-icon.html" (dict "size" "24" "class" "ms-1") }}
-      </div>
+    </div>
     <div class="card-header">
         <div class="row text-center">
             <h1 id="title">{{ .Title }}</h1>
@@ -10,10 +10,7 @@
     </div>
     <div class="card-body">
         <div class="row ">
-            
-                
             <div class="col col-lg-9 indented">
-                
                 {{ .Content }}
             </div>
 
@@ -21,7 +18,6 @@
                 {{ partial "toc.html" . }}
             </div>
         </div>
-
     </div>
 </article>
 {{ end }}

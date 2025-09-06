@@ -11,7 +11,7 @@
 
 {{ range .Pages -}}
 
-<article class="card ">
+<article class="card mb-4">
   <div class="card-header">
 
     {{ partial "article-meta.html" . }}
@@ -25,6 +25,7 @@
   <div class="card-footer text-end ">
     <a class=" btn btn-primary rounded" href="{{ .RelPermalink }}">Read More</a>
   </div>
+
   {{ end }}
 
 </article>
