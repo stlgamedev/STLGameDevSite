@@ -1,66 +1,34 @@
 [
   {
-    "title": "Making Narrative Games with Twine- Kelsey Watkins",
-    "description": "Kelsey Watkins will be leading a class on <a href=\"https://slpl.bibliocommons.com/events/68223a2f0e718812d2cd7c30\"><u>Making Narrative Games with Twine</u></a> on July 15th at 6:00pm. Learn how to use Twine to create games where players choose what happens next - no coding experience required!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> on July 26th!",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-15T18:00:00.000-05:00",
-    "endTime": "2025-07-15T20:00:00.000-05:00",
+    "title": "Chicago Indie Games Showcase (C.I.G.S.)",
+    "description": "Chicago Indie Game Showcase returns for its second year, this time at The Hairpin Arts Center in Logan Square! C.I.G.S. is a one-day convention showcasing guest speakers and spotlighting in-development and recently released independent games, focused on games produced within Chicago and the greater Midwestern area. <b><br><br></b>STLGameDev will have a table showcasing games by local STL game developers!<b> </b>Join us for a day full of open-play games, featured speakers, music, and get to know local developers. <br><span><span><br>For more details and to buy tickets, check out Indie City Games website: </span></span><a href=\"https://www.indiecitygames.org/chicagoindiegameshowcase\">https://www.indiecitygames.org/chicagoindiegameshowcase</a><br><span>Use code STL25 to get a 25% discount on tickets!</span>",
+    "location": "Hairpin Arts Center, 2810 N Milwaukee Ave, Chicago, IL 60618, USA",
+    "dateTime": "2025-09-06T13:00:00.000-05:00",
+    "endTime": "2025-09-06T21:00:00.000-05:00",
     "eventUrl": ""
   },
   {
-    "title": "Art Principles for Games- Brendan Steppig",
-    "description": "Looloopaa will be teaching a class on <a href=\"https://slpl.bibliocommons.com/events/68223a7b196202b54018c826\"><u>Art Principles for Games</u></a> on July 16th at 6:00pm! Learn about color, shape, composition, and how to create characters and environments that bring your game world to life!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u><u>Summer Library Game Jam</u></u></a> on July 26th!",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-16T18:00:00.000-05:00",
-    "endTime": "2025-07-16T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Simple Audio Tools for Games- Lazarus Richardson",
-    "description": "Lazarus D. Richardson will be demonstrating <a href=\"https://slpl.bibliocommons.com/events/68223b59196202b54018c83e\"><u>Simple Audio Tools for Games</u></a> on July 24th at 6:00pm. Learn how to create sound effects and music that bring games to life!<br><br>This is part of a series of educational events leading up to the St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\" target=\"_blank\"><u><u><u>Summer Library Game Jam</u></u></u></a> on July 26th!",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-24T18:00:00.000-05:00",
-    "endTime": "2025-07-24T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "SLPL Game Jam",
-    "description": "St. Louis Public Library’s <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf418\"><u>Summer Library Game Jam</u></a> will take place on July 26th for a quick one day game jam starting at 10:00am, with a <a href=\"https://slpl.bibliocommons.com/events/6822421ecaf0578ed11cf419\"><u>showcase on the 27th</u></a> starting at 2:00PM! <br><br>Check our Upcoming Events for a series of Educational talks leading up to this event!<br><br>Held in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-26T10:00:00.000-05:00",
-    "endTime": "2025-07-26T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "MoGameCon 2025",
-    "description": "Missouri's largest video game convention has invited STLGameDev to demo games made by members of our community all day long!  If you have a game you'd like us to demo for you, fill out our <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfmG3YeRqL0HYdJfT4CJNvNXrYQry4lRntCRaTrnCjtdKqq9Q/viewform\">submission form</a>!",
-    "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
-    "dateTime": "2025-07-26T11:00:00.000-05:00",
-    "endTime": "2025-07-26T18:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "SLPL Game Jam Showcase",
-    "description": "Attendees of the SLPL Game Jam can show off the games that they made!\n\nHeld in the Creative Experience Lab",
-    "location": "St. Louis Public Library - Central Library, 1301 Olive St, St. Louis, MO 63103, USA",
-    "dateTime": "2025-07-27T14:00:00.000-05:00",
-    "endTime": "2025-07-27T17:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "Game Club: A Short Hike",
-    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is... the wonderful little cozy game, <strong><a href=\"https://store.steampowered.com/app/1055540/A_Short_Hike/\" target=\"_blank\">A Short Hike</a></strong>.  Come share your thoughts on the game with us!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/308786221\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/308786221</a>",
-    "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
-    "dateTime": "2025-07-28T18:30:00.000-05:00",
-    "endTime": "2025-07-28T20:30:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
-    "title": "GameDev Social!",
-    "description": "<p>Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. Alcoholic drinks are 100% optional. Dirty 20 has plenty of non-alcoholic drink options, yummy mac n' cheeses, and other munchies if you get hungry.</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307236092",
+    "title": "September GameDev Social!",
+    "description": "<p>Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE.</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307236093",
     "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-08-14T19:00:00.000-05:00",
-    "endTime": "2025-08-14T22:00:00.000-05:00",
+    "dateTime": "2025-09-11T19:00:00.000-05:00",
+    "endTime": "2025-09-11T22:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Audio Club: Music Show & Tell!",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome! Just bring your love for game audio. We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/310831354",
+    "location": "MAP St. Louis Montessori School - 3840 Washington Ave - St. Louis, MO, us",
+    "dateTime": "2025-09-27T16:00:00.000-05:00",
+    "endTime": "2025-09-27T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Club: Lunistice ",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is Lunistice, a cute PS1-inspired indie 3D platformer! Come share your thoughts on the game with us!\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/310804120",
+    "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
+    "dateTime": "2025-09-29T18:30:00.000-05:00",
+    "endTime": "2025-09-29T20:30:00.000-05:00",
     "eventUrl": ""
   }
 ]
