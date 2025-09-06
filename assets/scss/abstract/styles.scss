@@ -45,6 +45,18 @@ body {
 
 }
 
+.card-body {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: $font-weight-bold;
+        color: $color-orange;
+        padding-top: 1rem;
+        padding-bottom:0.5rem;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $color-purple;
+    }
+}
+
 .punctuation-icon {
     position: absolute;
     bottom: 1rem;
