@@ -16,6 +16,14 @@
     "eventUrl": ""
   },
   {
+    "title": "Game Audio Feedback and Q&A feat. Fat Bard",
+    "description": "<b>Fat Bard</b> will be doing a mini-workshop to assess the effectiveness of YOUR work. They are looking for 4 people to submit websites / portfolios to be looked-over live during their presentation. Submissions will be selected before the event to be assessed during the workshop. <br>There will be a Q&amp;A after the assessments, so you can pick their brains on whatever pressing questions you might have for them about their journey in the world of game audio and beyond!<br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/311170436\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/311170436</a>",
+    "location": "MAP St. Louis Montessori School - 3840 Washington Ave - St. Louis, MO, us",
+    "dateTime": "2025-10-02T19:00:00.000-05:00",
+    "endTime": "2025-10-02T21:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "October GameDev Social!",
     "description": "<p>Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators for <strong><a href=\"https://stlgame.dev/news/spooky-jam-2025/\" target=\"_blank\">Spooky Jam</a></strong>, which starts on the 16th!</p><p>We will have a <em>speed-networking</em> activity around 8pm after everyone gets settled in. So be sure to arrive by then!</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/307236095",
     "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
@@ -24,19 +32,19 @@
     "eventUrl": ""
   },
   {
-    "title": "Spooky Jam 2025",
-    "description": "Spooky Jam 2025!<br><br><a href=\"https://www.google.com/url?q=https://stlgame.dev/news/spooky-jam-2025/&amp;sa=D&amp;source=calendar&amp;ust=1757627266242025&amp;usg=AOvVaw011FLk8AZvSxNZZ4MoZ4IS\" target=\"_blank\">https://stlgame.dev/news/spooky-jam-2025/</a>",
-    "location": "",
-    "dateTime": "2025-10-15T19:00:00.000-05:00",
-    "endTime": "2025-10-30T19:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Spooky Jam 2025 Kick-Off Presentation",
     "description": "Kick-off the Spooky Jam 2025 with a short Presentation on our Discord Server<br><br><br><br><i><a href=\"https://www.google.com/url?q=https://discord.com/invite/mTMKpre/&amp;sa=D&amp;source=calendar&amp;ust=1757627317200767&amp;usg=AOvVaw18lLpsEUY6MctsmTnVfQ5g\" target=\"_blank\">https://discord.com/invite/mTMKpre/</a></i>",
     "location": "",
     "dateTime": "2025-10-16T18:00:00.000-05:00",
     "endTime": "2025-10-16T18:15:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spooky Jam 2025",
+    "description": "Spooky Jam 2025!  A special Halloween game jam for the STLGameDev community!\n\nhttps://stlgame.dev/news/spooky-jam-2025/",
+    "location": "",
+    "dateTime": "2025-10-16T18:00:00.000-05:00",
+    "endTime": "2025-10-30T18:00:00.000-05:00",
     "eventUrl": ""
   },
   {
