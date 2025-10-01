@@ -64,6 +64,4 @@ If you are a developer from the St. Louis area, and have projects you would like
 
 ## Events
 
-We use a script to post and share new events: [Event Schedule Form](https://forms.gle/eAdAhLC9Q5LKzZLk9)
-
-Any new event will be added to the site, shared to Discord, and Social Media automatically.
+Events are pulled from our Google Calendar nightly.
