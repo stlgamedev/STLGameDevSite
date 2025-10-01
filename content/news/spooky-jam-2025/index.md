@@ -61,7 +61,9 @@ Most Game Jam rules operate on the honor system. Please respect the spirit of th
 
 2. Incorporate the theme (at least loosely).
   
-3. Submit a mostly-complete game by the deadline. Post-jam fixes for crashes or small bugs are acceptable, but continued development should move to a new project.
+3. Games must be submitted by the deadline or they will not be presented at the showcase.
+
+4. You are welcome to make changes to your game post-jam to fix small bugs, crashes, etc. You are also welcome (and encouraged) to continue working on your game after the jam - but please leave the version submitted for the jam as-is for posterity!
 
 ### 🚫 Strict Rules
 
