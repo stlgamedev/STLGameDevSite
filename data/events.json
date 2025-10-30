@@ -8,19 +8,19 @@
     "eventUrl": ""
   },
   {
-    "title": "Spooky Jam Work-Up (Grand Glaize)",
-    "description": "Free work-up session for the Spooky Jam 2025!<br><br>Bring your laptop to work on your game in person with other Jammers!<br><br>This event is at the Grand Glaize Branch - Meeting Room 2<br><a href=\"https://www.google.com/url?q=https://www.slcl.org/hours-and-locations/grand-glaize-branch&amp;sa=D&amp;source=calendar&amp;ust=1757627664166619&amp;usg=AOvVaw1po4s5CtcmkYmrkB1Q0HF_\" target=\"_blank\"><u>https://www.slcl.org/hours-and-locations/grand-glaize-branch</u></a>",
-    "location": "St. Louis County Library–Grand Glaize Branch, 1010 Meramec Station Road, Manchester, MO 63021, USA",
-    "dateTime": "2025-10-29T17:00:00.000-05:00",
-    "endTime": "2025-10-29T20:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Spooky Jam 2025 Showcase Event",
     "description": "Bring your finished game to show-off and hangout with other Jammers in the Post-Jam Showcase event!\n\nCostumes Encouraged!",
     "location": "Maryville University - Design & Visual Art Building, Room 103/104 - 611 Maryville University Dr, St. Louis, MO 63141, USA",
     "dateTime": "2025-10-30T18:30:00.000-05:00",
     "endTime": "2025-10-30T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "November GameDev Social!",
+    "description": "Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators.\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/308213046",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2025-11-13T19:00:00.000-06:00",
+    "endTime": "2025-11-13T22:00:00.000-06:00",
     "eventUrl": ""
   },
   {
@@ -37,6 +37,14 @@
     "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
     "dateTime": "2025-11-24T18:30:00.000-06:00",
     "endTime": "2025-11-24T20:30:00.000-06:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "December GameDev Social!",
+    "description": "Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/310537381",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2025-12-11T19:00:00.000-06:00",
+    "endTime": "2025-12-11T22:00:00.000-06:00",
     "eventUrl": ""
   }
 ]
