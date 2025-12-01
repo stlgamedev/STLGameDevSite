@@ -8,11 +8,27 @@
     "eventUrl": ""
   },
   {
+    "title": "Game Audio Club: Music Share",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio. <br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/311795809\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/</a>",
+    "location": "MAP St. Louis Montessori School - 3840 Washington Ave - St. Louis, MO, us",
+    "dateTime": "2025-12-27T16:00:00.000-06:00",
+    "endTime": "2025-12-27T18:00:00.000-06:00",
+    "eventUrl": ""
+  },
+  {
     "title": "December Game Club: TBD",
     "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. We're voting on our game for December right now!  Jump into our Discord to vote in the Game Club channel.\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/311772690",
     "location": "Qdoba (Creve Coeur) - 766 N New Ballas Rd - Creve Coeur, MO, us",
     "dateTime": "2025-12-29T18:30:00.000-06:00",
     "endTime": "2025-12-29T20:30:00.000-06:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Global Game Jam 2026",
+    "description": "We are excited to announce Global Game Jam 2025! Come team up with local creators and make a game over the weekend! This event is open to ALL (even remote friends)! Students from any campus are also welcome.<br><br>Online and In-Person participants are both welcome.  We will be using our community-run Discord server to handle announcements and online participation.  <a href=\"https://discord.gg/mTMKpre\">Join here!</a> <br><br><a href=\"https://globalgamejam.org/jam-sites/2026/university-missouri-st-louis-it-and-cybersecurity-club-hosting-stlgamedev\">Registration for Global Game Jam is now open!</a>",
+    "location": "Millennium Student Center, 17 Arnold B Grobman Dr, St. Louis, MO 63121, USA",
+    "dateTime": "2026-01-30T17:00:00.000-06:00",
+    "endTime": "2026-02-01T18:00:00.000-06:00",
     "eventUrl": ""
   }
 ]
