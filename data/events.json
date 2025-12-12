@@ -1,13 +1,5 @@
 [
   {
-    "title": "December GameDev Social!",
-    "description": "Come chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312186563",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
-    "dateTime": "2025-12-11T19:00:00.000-06:00",
-    "endTime": "2025-12-11T22:00:00.000-06:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Game Audio Club: Music Share",
     "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio. <br><br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/312256681/\">https://www.meetup.com/st-louis-game-developers/events/312256681/</a>",
     "location": "MAP St. Louis Montessori School - 3840 Washington Ave - St. Louis, MO, us",
@@ -21,6 +13,14 @@
     "location": "Sauce on the Side, 701 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2025-12-29T18:30:00.000-06:00",
     "endTime": "2025-12-29T20:30:00.000-06:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "STLGameDev New Year's Eve Party Mixer w/STLVGM!",
+    "description": "Ring in the New Year with creativity, community, and a little friendly competition! STLGameDev and STLVGM are teaming up for a special New Year’s Eve Mixer at <b>Dirty 20</b> starting at <b>8:00 PM</b>.<br>Whether you make games, make music, or just love the scene, come hang out, network, and celebrate with fellow developers and audio artists from around St. Louis. We’ll have <b>old-school multiplayer Mario Kart</b> set up, so bring your best drifting skills and get ready to battle it out retro-style.<br><b>Let’s kick off the new year with pixels, playlists, and plenty of power-ups!</b><br><span><span> </span></span><br><span><span>For full details, including the address, and to RSVP see: </span></span><a href=\"https://www.meetup.com/st-louis-game-developers/events/312397463/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/312397463/</a>",
+    "location": "",
+    "dateTime": "2025-12-31T20:00:00.000-06:00",
+    "endTime": "2026-01-01T00:30:00.000-06:00",
     "eventUrl": ""
   },
   {
