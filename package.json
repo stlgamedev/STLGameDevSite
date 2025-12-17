@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "description": "New website for the STLGameDev Community",
   "main": "index.html",
+  "engines": {
+    "node": ">=20.0.0",
+    "hugo": ">=0.152.2"
+  },
   "scripts": {
     "build": "hugo",
     "dev": "hugo server -D",
-    "start": "hugo server"
+    "start": "hugo server",
+    "preinstall": "echo '⚠️  This project requires Hugo Extended. See .hugo-version for the required version.'"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
