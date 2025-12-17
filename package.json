@@ -4,27 +4,23 @@
   "description": "New website for the STLGameDev Community",
   "main": "index.html",
   "scripts": {
-    "scss": "sass assets/scss:.",
-    "build": "npm run scss",
-    "watch:css": "sass --watch assets/scss:.",
-    "watch": "npm run watch:css",
-    "script": "npm run build && npm run watch",
-    "run": "hugo server -D"
+    "build": "hugo",
+    "dev": "hugo server -D",
+    "start": "hugo server"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "dayjs": "^1.11.13",
-    "fs-extra": "^11.3.0",
-    "graphql-request": "^7.1.2",
+    "bootstrap": "^5.3.8",
+    "dayjs": "^1.11.19",
+    "fs-extra": "^11.3.2",
+    "graphql-request": "^7.4.0",
     "jquery": "^3.7.1",
     "node-fetch": "^3.3.2",
     "rss-parser": "^3.13.0",
-    "sass": "^1.79.4"
+    "sass": "^1.97.0"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "prettier-plugin-go-template": "^0.0.15",
-    "watch": "^0.13.0"
+    "prettier": "^3.7.4",
+    "prettier-plugin-go-template": "^0.0.15"
   }
 }

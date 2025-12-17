@@ -3,7 +3,7 @@
 </style>
 
 
-{{- $cssOpts := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enabledSourceMap" (not hugo.IsProduction)) -}}
+{{- $cssOpts := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enabledSourceMap" (not hugo.IsProduction) "transpiler" "dartsass") -}}
 {{- $cssMain := resources.Get "scss/abstract/core.scss" | resources.ExecuteAsTemplate "scss/core.scss" . -}}
 {{- $cssStyles := resources.Get "scss/abstract/styles.scss" | resources.ExecuteAsTemplate "scss/styles.scss" . -}}
 

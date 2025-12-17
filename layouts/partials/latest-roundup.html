@@ -36,21 +36,39 @@
         <form
             action="https://dev.us3.list-manage.com/subscribe/post?u=4b257a41c7f509a1c26ef99f0&amp;id=c120d5d29b&amp;f_id=004d1de2f0"
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_self" novalidate="">
+            target="_self" novalidate="" data-form-init-time="">
 
             <div class="mc-field-group pb-3">
                 <label for="mce-EMAIL" class="form-label"><small>Email Address <span
                             class="asterisk color-yellow">*</span></small></label>
                 <input type="email" name="EMAIL" class="form-control required email " id="mce-EMAIL" required=""
-                    value="">
+                    value="" autocomplete="email">
             </div>
 
             <div class="mc-field-group pb-3">
                 <label for="mce-FNAME" class="form-label"><small>First Name <span
                             class="asterisk color-yellow">*</span></small></label>
                 <input type="text" name="FNAME" class="form-control required text float-righ" id="mce-FNAME" required=""
-                    value="">
+                    value="" autocomplete="given-name">
             </div>
+
+            <!-- Honeypot fields - bots fill these, humans don't see them -->
+            <div style="position: absolute; left: -5000px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+                <label for="website_url">Website</label>
+                <input type="text" name="website_url" id="website_url" placeholder="Your website" tabindex="-1" autocomplete="off">
+            </div>
+            <div style="position: absolute; left: -5000px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+                <label for="phone_number">Phone</label>
+                <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number" tabindex="-1" autocomplete="off">
+            </div>
+            <div style="position: absolute; left: -5000px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+                <label for="company_name">Company</label>
+                <input type="text" name="company_name" id="company_name" placeholder="Company name" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Hidden fields for bot detection -->
+            <input type="hidden" name="js_enabled" id="js_enabled" value="false">
+            <input type="hidden" name="form_submit_time" id="form_submit_time" value="">
 
             <div hidden=""><input type="hidden" name="tags" value="10815031"></div>
             <div id="mce-responses" class="clear foot">
@@ -102,5 +120,64 @@
 
     $(document).ready(function () {
         getLatestRoundUp();
+        initAntiSpamProtection();
     });
+
+    function initAntiSpamProtection() {
+        const form = document.getElementById('mc-embedded-subscribe-form');
+        if (!form) return;
+
+        // Set form initialization time
+        const initTime = Date.now();
+        form.setAttribute('data-form-init-time', initTime);
+
+        // Mark that JavaScript is enabled
+        const jsEnabledField = document.getElementById('js_enabled');
+        if (jsEnabledField) {
+            jsEnabledField.value = 'true';
+        }
+
+        // Add form submit validation
+        form.addEventListener('submit', function(e) {
+            // Check honeypot fields - if filled, it's a bot
+            const honeypotFields = ['website_url', 'phone_number', 'company_name'];
+            for (let fieldId of honeypotFields) {
+                const field = document.getElementById(fieldId);
+                if (field && field.value !== '') {
+                    e.preventDefault();
+                    console.log('Bot detected: honeypot field filled');
+                    // Silently fail - don't tell bots they were caught
+                    return false;
+                }
+            }
+
+            // Check if form was submitted too quickly (less than 3 seconds)
+            const currentTime = Date.now();
+            const formInitTime = parseInt(form.getAttribute('data-form-init-time'));
+            const timeSpent = (currentTime - formInitTime) / 1000;
+            
+            if (timeSpent < 3) {
+                e.preventDefault();
+                console.log('Bot detected: form submitted too quickly');
+                return false;
+            }
+
+            // Check if JavaScript is enabled (set by our script)
+            const jsEnabled = document.getElementById('js_enabled');
+            if (!jsEnabled || jsEnabled.value !== 'true') {
+                e.preventDefault();
+                console.log('Bot detected: JavaScript not properly enabled');
+                return false;
+            }
+
+            // Set the submission time
+            const submitTimeField = document.getElementById('form_submit_time');
+            if (submitTimeField) {
+                submitTimeField.value = currentTime.toString();
+            }
+
+            // All checks passed - let the form submit normally
+            return true;
+        });
+    }
 </script>
