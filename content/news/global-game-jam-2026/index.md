@@ -2,7 +2,7 @@
 title: 'Global Game Jam 2026'
 date: 2025-12-13
 draft: false
-images: ["images/news/GGJ26-web-banner.webp"]
+images: ["images/news/GGJ26-web-banner.png"]
 ---
 
 ## Announcing: Global Game Jam 2026!
