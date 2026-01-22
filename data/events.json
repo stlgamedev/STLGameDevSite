@@ -22,5 +22,21 @@
     "dateTime": "2026-01-30T17:00:00.000-06:00",
     "endTime": "2026-02-01T18:00:00.000-06:00",
     "eventUrl": ""
+  },
+  {
+    "title": "February GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312692347",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2026-02-12T19:00:00.000-06:00",
+    "endTime": "2026-02-12T22:00:00.000-06:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Share & Play: Game Playtesting",
+    "description": "Join us for casual game playtesting! This is an opportunity for developers to share their progress, observe playtesting, and get feedback on their projects, and for local game enthusiasts to get their hands on new games, prototypes, and give helpful feedback.\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312859534",
+    "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
+    "dateTime": "2026-02-28T12:00:00.000-06:00",
+    "endTime": "2026-02-28T16:00:00.000-06:00",
+    "eventUrl": ""
   }
 ]
