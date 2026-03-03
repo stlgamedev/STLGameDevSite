@@ -1,15 +1,23 @@
 [
   {
-    "title": "February GameDev Social!",
-    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312692347",
+    "title": "March GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. Alcoholic drinks are 100% optional. Dirty 20 has plenty of non-alcoholic drink options, yummy mac n' cheeses, and other munchies if you get hungry. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312692350",
     "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
     "dateTime": "2026-03-12T19:00:00.000-05:00",
     "endTime": "2026-03-12T22:00:00.000-05:00",
     "eventUrl": ""
   },
   {
+    "title": "March Game Audio Club",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio.<br>We’re a chill group where you can share your work, get feedback, or just vibe with people who love game audio. <br><br><span>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/313609575\">https://www.meetup.com/st-louis-game-developers/events/313609575</a></span>",
+    "location": "",
+    "dateTime": "2026-03-21T16:00:00.000-05:00",
+    "endTime": "2026-03-21T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "Game Club: 30XX",
-    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is the roguelite action platformer, 30XX! We will be meeting virtually on Discord this month (in the general voice chat). Come share your thoughts on the game with us!\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.  This month's game is the roguelite action platformer, 30XX! We will be meeting virtually on Discord this month (in the general voice chat). Come share your thoughts on the game with us!<br><br>For full details, including the address, and to RSVP see:<a href=\"https://www.meetup.com/st-louis-game-developers/events/313482156/?eventOrigin=group_upcoming_events\">https://www.meetup.com/st-louis-game-developers/events/313482156/</a>",
     "location": "Online event",
     "dateTime": "2026-03-23T18:30:00.000-05:00",
     "endTime": "2026-03-23T20:30:00.000-05:00",
