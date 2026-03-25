@@ -64,9 +64,6 @@ STLGameDev is led by a core team of volunteer administrators:
 - Dan Eichling &mdash; <i class="i fa-brands fa-discord"></i> kinglord, [<i class="fa-sharp-duotone fa-solid fa-mailbox"></i> dan@callsigngames](mailto:dan@callsigngames.com)
   : Dan is a game industry veteran, agile enthusiast and AI harbinger. An OG community member and speaker that has his 2009 GGJ pin somewhere. Still enjoys making and playing games of all shapes and flavors, except eggplant.
 
-- Tim I Hely &mdash; <i class="i fa-brands fa-discord"></i> seifertim, [<i class="i fa-brands fa-itch-io"></i> seifertim](https://seifertim.itch.io/), [<i class="i fa-brands fa-itch-io"></i> axolstudio](https://axolstudio.itch.io/)
-  : Tim has been a member of the St. Louis Game Development community since his first Game Jam in April 2014. He is the Founder of [Axol Studio](https://axolstudio.com) game company.
-
 - TimConceivable &mdash; <i class="i fa-brands fa-discord"></i> timconceivable, [<i class="i fa-brands fa-itch-io"></i> timconceivable](https://timconceivable.itch.io/)
   : TimConceivable! is a 2D artist, game developer, and musical dabbler. He has been an active member of the community since 2010 when he started his game dev journey. In the following years he has participated in over 40 game jams and *completed* zero games. He was also a Co-op board member from 2018 to 2019.
 

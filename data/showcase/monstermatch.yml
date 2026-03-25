@@ -1,9 +1,0 @@
-Name: 'Monster Match'
-Description: "In this fast-paced, action puzzle game, you will need to defend your home against a band of heroes intent on ending your un-life and taking your treasure."
-Links:
-  - URL: 'https://www.newgrounds.com/portal/view/804030'
-    Tooltip: 'Newgrounds'
-    Icon: "fa-kit fa-newgrounds"
-  - URL: 'https://axolstudio.itch.io/monster-match'
-    Tooltip: 'Itch.io'
-    Icon: "fa-brands fa-itch-io"
