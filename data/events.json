@@ -6,5 +6,21 @@
     "dateTime": "2026-03-30T17:00:00.000-05:00",
     "endTime": "2026-03-30T20:00:00.000-05:00",
     "eventUrl": ""
+  },
+  {
+    "title": "April GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian.\n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312692351",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2026-04-09T19:00:00.000-05:00",
+    "endTime": "2026-04-09T22:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "April Game Club: TBD",
+    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is ... not decided yet.</p><p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935700</p>",
+    "location": "Online event",
+    "dateTime": "2026-04-20T18:30:00.000-05:00",
+    "endTime": "2026-04-20T20:30:00.000-05:00",
+    "eventUrl": ""
   }
 ]
