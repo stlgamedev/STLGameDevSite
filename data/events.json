@@ -16,11 +16,27 @@
     "eventUrl": ""
   },
   {
+    "title": "Dev Day Out: Hike at Castlewood!",
+    "description": "Let's get outside and touch grass! Join us for a hike around Castlewood State Park. We can get inspired and brainstorm game ideas while we move and take in the sights and sounds of nature along the Meramec river.\n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935893",
+    "location": "Castlewood State Park - 1401 Kriefer Creek rd,  - Ballwin, MO, US",
+    "dateTime": "2026-04-12T10:30:00.000-05:00",
+    "endTime": "2026-04-12T13:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "April Game Club: TBD",
     "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is ... not decided yet.</p><p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935700</p>",
     "location": "Online event",
     "dateTime": "2026-04-20T18:30:00.000-05:00",
     "endTime": "2026-04-20T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Gamedev Work Night",
+    "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313609823",
+    "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
+    "dateTime": "2026-04-27T17:00:00.000-05:00",
+    "endTime": "2026-04-27T20:00:00.000-05:00",
     "eventUrl": ""
   }
 ]
