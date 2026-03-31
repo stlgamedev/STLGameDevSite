@@ -16,11 +16,19 @@
     "eventUrl": ""
   },
   {
-    "title": "April Game Club: TBD",
-    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is ... not decided yet.</p><p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935700</p>",
+    "title": "Game Club: Turnip Boy Commits Tax Evasion",
+    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. This month's game is ... <a href=\"https://store.steampowered.com/app/1205450/Turnip_Boy_Commits_Tax_Evasion/\" target=\"_blank\">Turnip Boy Commits Tax Evasion</a>!</p><p></p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935700",
     "location": "Online event",
     "dateTime": "2026-04-20T18:30:00.000-05:00",
     "endTime": "2026-04-20T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spring Game Jam Theme Reveal",
+    "description": "<p>Join STLGameDev in challenging yourself to make a game over a week! It can be a board game or a video game, it's up to you! The Theme Reveal will be streamed online on <a href=\"https://www.twitch.tv/STLGameDev\" target=\"_blank\">Twitch</a>.</p><p></p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/314039471",
+    "location": "Online event",
+    "dateTime": "2026-04-24T18:30:00.000-05:00",
+    "endTime": "2026-04-24T19:00:00.000-05:00",
     "eventUrl": ""
   },
   {
@@ -29,6 +37,14 @@
     "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
     "dateTime": "2026-04-27T17:00:00.000-05:00",
     "endTime": "2026-04-27T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Spring Game Jam Showcase",
+    "description": "Join us in-person for a showcase of submitted Spring Game Jam demos at the St. Louis County <strong>Grand Glaize</strong> Library, Meeting Room 1.<br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/314039471\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/314039471</a>",
+    "location": "Online event",
+    "dateTime": "2026-05-02T15:00:00.000-05:00",
+    "endTime": "2026-05-02T17:00:00.000-05:00",
     "eventUrl": ""
   }
 ]
