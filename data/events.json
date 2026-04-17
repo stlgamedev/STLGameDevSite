@@ -32,11 +32,19 @@
     "eventUrl": ""
   },
   {
-    "title": "Spring Game Jam Showcase",
-    "description": "Join us in-person for a showcase of submitted Spring Game Jam demos at the St. Louis County <strong>Grand Glaize</strong> Library, Meeting Room 1.<br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/314039471\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/314039471</a>",
-    "location": "St. Louis County Library–Grand Glaize Branch, 1010 Meramec Station Road, Manchester, MO 63021, USA",
+    "title": "Spring Game Jam Showcase and After-Party!",
+    "description": "<p>Check out all of the games made over a week for our Spring Game Jam live in-person at 3pm at the <b>Grand Glaize library</b>! This event is FREE and open to anyone!</p><p>Join us afterward at 5:30pm at <b>Dirty 20</b> for drinks (non-alcoholic options available), munchies, and merriment to celebrate a successful jam! ALL AGES ARE WELCOME, but minors must be accompanied by a parent/guardian and you will have to buy your own food/drinks.</p><p></p>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/314306211\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/314306211</a>",
+    "location": "Grand Glaize Library - 1010 Meramec Station Rd, Manchester MO - Ballwin, MO, us",
     "dateTime": "2026-05-02T15:00:00.000-05:00",
     "endTime": "2026-05-02T17:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "May GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE!\n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/312692352",
+    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "dateTime": "2026-05-14T19:00:00.000-05:00",
+    "endTime": "2026-05-14T22:00:00.000-05:00",
     "eventUrl": ""
   }
 ]
