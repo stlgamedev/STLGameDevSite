@@ -1,13 +1,5 @@
 [
   {
-    "title": "Spring Game Jam Theme Reveal",
-    "description": "<p>Join STLGameDev in challenging yourself to make a game over a week! It can be a board game or a video game, it's up to you! The Theme Reveal will be streamed online on <a href=\"https://www.twitch.tv/STLGameDev\" target=\"_blank\">Twitch</a>.</p><p></p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/314039471",
-    "location": "Online event",
-    "dateTime": "2026-04-24T18:30:00.000-05:00",
-    "endTime": "2026-04-24T19:00:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "Gamedev Work Night",
     "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313609823",
     "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
@@ -29,6 +21,14 @@
     "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
     "dateTime": "2026-05-14T19:00:00.000-05:00",
     "endTime": "2026-05-14T22:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Club: Reventure",
+    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design.</p><p></p><p><strong>Our game for May is ... <a href=\"https://store.steampowered.com/app/900270/Reventure/\" target=\"_blank\">Reventure</a></strong>, a pixely non-linear adventure with over 100 endings!</p><p><span>This month will be <strong>meeting in-person</strong> once again at Sauce on the Side!</span> </p><p></p><br>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/314391964",
+    "location": "Sauce on the Side - 701 N. New Ballas Road - Creve Coeur, MO, US",
+    "dateTime": "2026-05-18T18:30:00.000-05:00",
+    "endTime": "2026-05-18T20:30:00.000-05:00",
     "eventUrl": ""
   }
 ]
