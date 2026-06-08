@@ -40,6 +40,14 @@
     "eventUrl": ""
   },
   {
+    "title": "MO Game Con",
+    "description": "<p><span>Missouri Game Convention (MoGameCon) is a convention celebrating all forms of games and unites the gaming community. Each year it features </span><span><span>vendors of all types of games and gaming merchandise</span></span>, <span><span>games on free play, </span></span><span>video game tournaments, and a cosplay contest.  STLGameDev will have a table!</span></p><p><span>More information and tickets are available on the <a href=\"https://www.mogamecon.com/\">MoGameCon website</a>!</span></p>",
+    "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
+    "dateTime": "2026-07-25T11:00:00.000-05:00",
+    "endTime": "2026-07-25T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "Share & Play: Game Playtesting!",
     "description": "Join us for casual game playtesting! This is an opportunity for developers to share their progress, observe playtesting, and get feedback on their projects, and for local game enthusiasts to get their hands on new games, prototypes, and give helpful feedback. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/314944378",
     "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
