@@ -1,13 +1,5 @@
 [
   {
-    "title": "Game Club: The Aquatic Adventure of the Last Human",
-    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. Our game for this month is... The Aquatic Adventure of the Last Human</p>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/314944290\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/314944290</a>",
-    "location": "Sauce on the Side, 701 N New Ballas Rd, Creve Coeur, MO 63141, USA",
-    "dateTime": "2026-06-22T18:30:00.000-05:00",
-    "endTime": "2026-06-22T20:30:00.000-05:00",
-    "eventUrl": ""
-  },
-  {
     "title": "June Gamedev Work Night",
     "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313935659",
     "location": "St. Louis County Library - Clark Family branch - 1640 South Lindbergh Blvd - St. Louis, MO, us",
@@ -24,11 +16,43 @@
     "eventUrl": ""
   },
   {
+    "title": "Game Club: TBD",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376266",
+    "location": "Sauce on the Side - 701 N. New Ballas Road - Creve Coeur, MO, US",
+    "dateTime": "2026-07-20T18:30:00.000-05:00",
+    "endTime": "2026-07-20T20:30:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
     "title": "MO Game Con",
     "description": "<p><span><span><b>STLGameDev will have a table. Stop by and say hi!</b></span></span> </p><p><span>Missouri Game Convention (MoGameCon) is a convention celebrating all forms of games and unites the gaming community. Each year it features </span><span><span>vendors of all types of games and gaming merchandise</span></span>, <span><span>games on free play, </span></span><span>video game tournaments, and a cosplay contest.</span></p><p><span>More information and tickets are available on the <a href=\"https://www.mogamecon.com/\" target=\"_blank\">MoGameCon website</a>!</span></p>",
     "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
     "dateTime": "2026-07-25T11:00:00.000-05:00",
     "endTime": "2026-07-25T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "July Gamedev Work Night",
+    "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376282",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-07-27T17:00:00.000-05:00",
+    "endTime": "2026-07-27T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "Game Night at MO History Museum",
+    "description": "The Missouri History Museum is having a big <a href=\"https://mohistory.org/events/game-night\" target=\"_blank\">Game Night</a> featuring games and creators from the St. Louis area (including STLGameDev)! <br> <br>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376686",
+    "location": "Missouri History Museum - 5700 Lindell Blvd. - St. Louis  , MO, us",
+    "dateTime": "2026-08-06T17:00:00.000-05:00",
+    "endTime": "2026-08-06T20:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "August GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. Alcoholic drinks are 100% optional. Dirty 20 has plenty of non-alcoholic drink options, yummy mac n' cheeses, and other munchies if you get hungry. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376730",
+    "location": "Dirty 20 Bar, 14051 Manchester Rd, Ballwin, MO 63011, USA",
+    "dateTime": "2026-08-13T19:00:00.000-05:00",
+    "endTime": "2026-08-13T22:00:00.000-05:00",
     "eventUrl": ""
   },
   {
