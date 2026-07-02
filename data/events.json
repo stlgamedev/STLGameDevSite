@@ -1,26 +1,34 @@
 [
   {
     "title": "July GameDev Social!",
-    "description": "<p>Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. This is mainly a social event, but feel free to bring your sketchbook, tablet, laptop, or card/board game prototype to show off whatever you're working on!</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/313699544",
-    "location": "Dirty 20 Bar - 14051 Manchester Rd - Ballwin, MO, us",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE! <br><em><strong>WE ARE MOVING TO A NEW LOCATION THIS MONTH!</strong></em><br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/313699544\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/313699544</a>",
+    "location": "Schlafly Bottleworks, 7260 Southwest Ave, St. Louis, MO 63143, USA",
     "dateTime": "2026-07-09T19:00:00.000-05:00",
     "endTime": "2026-07-09T22:00:00.000-05:00",
     "eventUrl": ""
   },
   {
-    "title": "Game Club: TBD",
-    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376266",
-    "location": "Sauce on the Side - 701 N. New Ballas Road - Creve Coeur, MO, US",
+    "title": "Game Club: Sunless Sea",
+    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. Our game for this month is <a href=\"https://store.steampowered.com/app/304650/SUNLESS_SEA/\" target=\"_blank\">Sunless Sea</a>!</p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376266",
+    "location": "Sauce on the Side, 701 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2026-07-20T18:30:00.000-05:00",
     "endTime": "2026-07-20T20:30:00.000-05:00",
     "eventUrl": ""
   },
   {
-    "title": "MO Game Con",
-    "description": "<p><span><span><b>STLGameDev will have a table. Stop by and say hi!</b></span></span> </p><p><span>Missouri Game Convention (MoGameCon) is a convention celebrating all forms of games and unites the gaming community. Each year it features </span><span><span>vendors of all types of games and gaming merchandise</span></span>, <span><span>games on free play, </span></span><span>video game tournaments, and a cosplay contest.</span></p><p><span>More information and tickets are available on the <a href=\"https://www.mogamecon.com/\" target=\"_blank\">MoGameCon website</a>!</span></p>",
+    "title": "MOGameCon 2026",
+    "description": "<p><b>This is not an official STLGameDev event</b>, but we will have a table there once again. Stop by and say hi if you attend!</p><p><b>General admission tickets for the convention are $10</b> and will be available at the door. For more information or to purchase tickets online, check out the MOGameCon website.</p>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/315511103\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/315511103</a>",
     "location": "Greensfelder Recreation Complex, 550 Weidman Rd, Manchester, MO 63011, USA",
     "dateTime": "2026-07-25T11:00:00.000-05:00",
     "endTime": "2026-07-25T18:00:00.000-05:00",
+    "eventUrl": ""
+  },
+  {
+    "title": "July Game Audio Club - Project Share",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. Chill time where you can share your work, get feedback, or just vibe with people who love game audio. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315446561",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-07-25T15:00:00.000-05:00",
+    "endTime": "2026-07-25T17:00:00.000-05:00",
     "eventUrl": ""
   },
   {
@@ -41,8 +49,8 @@
   },
   {
     "title": "August GameDev Social!",
-    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE. This is an all ages event, but minors must be accompanied by a parent or guardian. Alcoholic drinks are 100% optional. Dirty 20 has plenty of non-alcoholic drink options, yummy mac n' cheeses, and other munchies if you get hungry. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/315376730",
-    "location": "Dirty 20 Bar, 14051 Manchester Rd, Ballwin, MO 63011, USA",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE! <br><b><i>WE WILL BE AT A SPECIAL LOCATION THIS MONTH!</i></b><br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/315376730\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/315376730</a>",
+    "location": "BoCo Boba, 500 N Grand Blvd, St. Louis, MO 63103, USA",
     "dateTime": "2026-08-13T19:00:00.000-05:00",
     "endTime": "2026-08-13T22:00:00.000-05:00",
     "eventUrl": ""
