@@ -15,6 +15,7 @@
       "description" $event.description
       "dateTime" $eventTime
       "eventUrl" $event.eventUrl
+      "imageUrl" $event.imageUrl
       "where" $event.location
       "end" $endTime
     ) -}}
@@ -24,6 +25,16 @@
 {{ if gt (len $upcoming) 0 }}
 {{ $next := index (sort $upcoming "dateTime") 0 }}
 <section class="container ">
+    {{- $fallbackImage := resources.Get "images/events/event-generic.png" -}}
+    {{- with $next.imageUrl }}
+    <div class="text-center mb-3">
+        <img src="{{ . }}" alt="{{ $next.title }}" class="img-fluid rounded" />
+    </div>
+    {{- else if $fallbackImage }}
+    <div class="text-center mb-3">
+        <img src="{{ $fallbackImage.RelPermalink }}" alt="{{ $next.title }}" class="img-fluid rounded" />
+    </div>
+    {{- end }}
     <dl class="p-0 m-0">
         <dt class="h4 text-center">{{ $next.title }}</dt>
         <dt class="h5 text-center">{{ time.Format ":date_long" $next.dateTime }} {{ time.Format ":time_short"
