@@ -114,10 +114,13 @@ async function buildEvent(item, startDate, endDate) {
 }
 
 async function main() {
-  const allEvents = await Promise.all([
-    ...events.map(e => buildEvent(e, e.startDate, e.endDate)),
-    ...occurrences.map(({ startDate, endDate, item }) => buildEvent(item, startDate, endDate))
-  ]);
+  const allEvents = [];
+  for (const e of events) {
+    allEvents.push(await buildEvent(e, e.startDate, e.endDate));
+  }
+  for (const { startDate, endDate, item } of occurrences) {
+    allEvents.push(await buildEvent(item, startDate, endDate));
+  }
 
   allEvents.sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
   fs.writeFileSync('data/events.json', JSON.stringify(allEvents, null, 2));
