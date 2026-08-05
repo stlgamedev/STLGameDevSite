@@ -6,6 +6,9 @@ const { JSDOM } = require('jsdom');
 const meetupEventUrlRegex = /https:\/\/www\.meetup\.com\/st-louis-game-developers\/events\/(\d+)\/?/i;
 const eventZone = 'America/Chicago';
 const meetupFallbackImage = 'https://secure-content.meetupstatic.com/images/classic-events/placeholder-event.png';
+const knownMeetupImages = {
+  '315376686': 'https://github.com/user-attachments/assets/330d094e-e44e-441c-a15f-9af853dfc9ea'
+};
 
 function sanitizeImageUrl(value) {
   if (typeof value !== 'string') {
@@ -17,6 +20,10 @@ function sanitizeImageUrl(value) {
 }
 
 async function fetchMeetupImage(eventId) {
+  if (knownMeetupImages[eventId]) {
+    return knownMeetupImages[eventId];
+  }
+
   const url = `https://www.meetup.com/st-louis-game-developers/events/${eventId}/`;
 
   try {
