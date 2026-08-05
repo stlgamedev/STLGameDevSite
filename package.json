@@ -21,6 +21,7 @@
     "graphql-request": "^7.4.0",
     "ical-expander": "^3.1.0",
     "jquery": "^3.7.1",
+    "jsdom": "^26.1.0",
     "luxon": "^3.7.2",
     "node-fetch": "^3.3.2",
     "rss-parser": "^3.13.0",
