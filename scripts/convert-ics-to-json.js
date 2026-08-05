@@ -7,6 +7,15 @@ const meetupEventUrlRegex = /https:\/\/www\.meetup\.com\/st-louis-game-developer
 const eventZone = 'America/Chicago';
 const meetupFallbackImage = 'https://secure-content.meetupstatic.com/images/classic-events/placeholder-event.png';
 
+function sanitizeImageUrl(value) {
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  const trimmed = value.trim();
+  return trimmed.startsWith('https://') ? trimmed : '';
+}
+
 async function fetchMeetupImage(eventId) {
   const url = `https://www.meetup.com/st-louis-game-developers/events/${eventId}/`;
 
@@ -32,7 +41,7 @@ async function fetchMeetupImage(eventId) {
     ];
 
     for (const selector of selectors) {
-      const value = document.querySelector(selector)?.getAttribute('content')?.trim();
+      const value = sanitizeImageUrl(document.querySelector(selector)?.getAttribute('content'));
       if (value && value !== meetupFallbackImage) {
         return value;
       }
@@ -45,8 +54,8 @@ async function fetchMeetupImage(eventId) {
         const items = Array.isArray(parsed) ? parsed : [parsed];
         for (const item of items) {
           const image = item?.image;
-          const imageUrl = Array.isArray(image) ? image[0] : image?.url || image;
-          if (typeof imageUrl === 'string' && imageUrl && imageUrl !== meetupFallbackImage) {
+          const imageUrl = sanitizeImageUrl(Array.isArray(image) ? image[0] : image?.url ?? image?.contentUrl ?? image);
+          if (imageUrl && imageUrl !== meetupFallbackImage) {
             return imageUrl;
           }
         }
