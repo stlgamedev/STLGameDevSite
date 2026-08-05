@@ -51,6 +51,7 @@ async function fetchMeetupImage(eventId) {
     for (const selector of selectors) {
       const value = sanitizeImageUrl(document.querySelector(selector)?.getAttribute('content'));
       if (value && value !== meetupFallbackImage) {
+        dom.window.close();
         return value;
       }
     }
@@ -64,12 +65,16 @@ async function fetchMeetupImage(eventId) {
           const image = item?.image;
           const imageUrl = sanitizeImageUrl(Array.isArray(image) ? image[0] : image?.url ?? image?.contentUrl ?? image);
           if (imageUrl && imageUrl !== meetupFallbackImage) {
+            dom.window.close();
             return imageUrl;
           }
         }
       } catch {
+        // ignore invalid JSON-LD blocks
       }
     }
+
+    dom.window.close();
   } catch {
     return '';
   }
