@@ -28,6 +28,7 @@ async function fetchMeetupImage(eventId) {
 
   try {
     const response = await fetch(url, {
+      signal: AbortSignal.timeout(10_000),
       headers: {
         'user-agent': 'Mozilla/5.0 (compatible; STLGameDevSite event sync)'
       }
