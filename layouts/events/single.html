@@ -31,6 +31,7 @@
     "when" $eventTime
     "where" $eventRaw.location
     "end" $endTime
+    "imageUrl" $eventRaw.imageUrl
     ) -}}
     {{ end }}
     {{ end }}
@@ -57,9 +58,9 @@
 
                     <div class="col d-flex align-items-stretch">
                         <div class="card border-color-orange">
-                            <img src="{{- if strings.Contains $event.name "Social" }}{{ $socialImg.RelPermalink }} {{-
+                            <img src="{{- if $event.imageUrl }}{{ $event.imageUrl }}{{- else if strings.Contains $event.name "Social" }}{{ $socialImg.RelPermalink }} {{-
                                 else if strings.Contains $event.name "Share & Play" }}{{ $demosImg.RelPermalink }} {{ else
-                                }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="Event Image">
+                                }}{{ $genericImg.RelPermalink }}{{ end }}" class="card-img-top" alt="{{ $event.name }}">
                             <div class="card-body d-flex flex-column">
                                 <p class="h3 card-text text-center">{{ $event.name }}</p>
                                 <p class="h4 card-text text-center">{{ time.Format "Jan 2" $event.when }} {{ time.Format
