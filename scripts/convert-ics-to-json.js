@@ -3,7 +3,22 @@ const { DateTime } = require('luxon');
 const IcalExpander = require('ical-expander');
 const { JSDOM } = require('jsdom');
 
-const meetupEventUrlRegex = /https:\/\/www\.meetup\.com\/st-louis-game-developers\/events\/(\d+)\/?/i;
+const meetupEventUrlRegex = /https:\/\/www\.meetup\.com\/st-louis-game-developers\/events\/(\d+)\/?/gi;
+const meetupRsvpUrlRegex = /For full details, including the address, and to RSVP see:[\s\S]*https:\/\/www\.meetup\.com\/st-louis-game-developers\/events\/(\d+)/i;
+
+// Descriptions sometimes link to a different event before their own (a work
+// session pointing at the jam it belongs to, say), so the first link in the text
+// is not reliably this event. The RSVP line always is. If that line is ever
+// reworded, fall back to the last link rather than the first.
+function extractMeetupEventId(description) {
+  const rsvpMatch = description.match(meetupRsvpUrlRegex);
+  if (rsvpMatch) {
+    return rsvpMatch[1];
+  }
+
+  const matches = [...description.matchAll(meetupEventUrlRegex)];
+  return matches.length ? matches[matches.length - 1][1] : '';
+}
 const eventZone = 'America/Chicago';
 const meetupFallbackImage = 'https://secure-content.meetupstatic.com/images/classic-events/placeholder-event.png';
 
@@ -90,8 +105,7 @@ const { events, occurrences } = icalExpander.between(now, future);
 
 async function buildEvent(item, startDate, endDate) {
   const description = item.description || '';
-  const meetupMatch = description.match(meetupEventUrlRegex);
-  const meetupEventId = meetupMatch ? meetupMatch[1] : '';
+  const meetupEventId = extractMeetupEventId(description);
   const imageUrl = meetupEventId ? await fetchMeetupImage(meetupEventId) : '';
 
   return {
