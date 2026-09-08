@@ -1,12 +1,42 @@
 [
   {
+    "title": "September Game Audio Club - Project Share",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. Chill time where you can share your work, get feedback, or just vibe with people who love game audio.\n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316130904",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-09-12T15:00:00.000-05:00",
+    "endTime": "2026-09-12T17:00:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316130904",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/a/b/8/2/600_534523906.jpeg"
+  },
+  {
     "title": "September GameDev Social!",
-    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE! <br><i>WE ARE MOVING TO A NEW LOCATION THIS MONTH!</i><br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/315814547\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/315814547</a>",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to everyone! <i>WE ARE BACK AT SCHLAFLY AGAIN THIS MONTH!</i><br> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/315814547\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/315814547</a>",
     "location": "Schlafly Bottleworks, 7260 Southwest Ave, St. Louis, MO 63143, USA",
     "dateTime": "2026-09-17T19:00:00.000-05:00",
     "endTime": "2026-09-17T22:00:00.000-05:00",
     "eventUrl": "",
     "meetupEventId": "315814547",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/9/6/0/f/600_534398415.jpeg"
+  },
+  {
+    "title": "Game Club: Counterfeit Monkey",
+    "description": "<p>Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. Our game for this month is <a href=\"https://ifdb.org/viewgame?id=aearuuxv83plclpl\">Counterfeit Monkey</a>!</p><p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316410911</p>",
+    "location": "Sauce on the Side, 701 N New Ballas Rd, Creve Coeur, MO 63141, USA",
+    "dateTime": "2026-09-21T18:30:00.000-05:00",
+    "endTime": "2026-09-21T20:30:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316410911",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/e/4/e/1/600_535978593.jpeg"
+  },
+  {
+    "title": "October GameDev Social!",
+    "description": "<p>Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE!</p><p>For full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316205663</p>",
+    "location": "Schlafly Bottleworks, 7260 Southwest Ave, St. Louis, MO 63143, USA",
+    "dateTime": "2026-10-08T19:00:00.000-05:00",
+    "endTime": "2026-10-08T22:00:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316205663",
     "imageUrl": "https://secure.meetupstatic.com/photos/event/9/6/0/f/600_534398415.jpeg"
   },
   {
