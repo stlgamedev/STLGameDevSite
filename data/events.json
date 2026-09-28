@@ -1,13 +1,23 @@
 [
   {
-    "title": "Spooky Jam 2026",
-    "description": "It's time to make more spooky games!  <br> <br><a href=\"https://itch.io/jam/stlgamedev-spooky-jam-2026\" target=\"_blank\">More details soon</a>...",
-    "location": "",
-    "dateTime": "2026-10-01T18:00:00.000-05:00",
-    "endTime": "2026-10-18T16:00:00.000-05:00",
+    "title": "September Gamedev Work Night",
+    "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316753085",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-09-28T17:00:00.000-05:00",
+    "endTime": "2026-09-28T20:00:00.000-05:00",
     "eventUrl": "",
-    "meetupEventId": "",
-    "imageUrl": ""
+    "meetupEventId": "316753085",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/7/7/a/3/600_533010627.jpeg"
+  },
+  {
+    "title": "Spooky Jam 2026",
+    "description": "<span><br><span>It's Spooky Season, which means it's time for another <a href=\"https://itch.io/jam/stlgamedev-spooky-jam-2026\" target=\"_blank\">Spooky Jam</a>! We encourage everyone to make games but <b>we will accept creations of all kinds for this jam!</b> Feel free to make a video game, board game, card game, visual art, comic, zine, song, music album, visual novel, poem, short story, sculpture... anything!</span></span> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/316699612\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/316699612</a>",
+    "location": "https://itch.io/jam/stlgamedev-spooky-jam-2026",
+    "dateTime": "2026-10-01T19:00:00.000-05:00",
+    "endTime": "2026-10-18T23:30:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316699612",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/3/d/3/6/600_536295670.jpeg"
   },
   {
     "title": "October GameDev Social!",
@@ -28,6 +38,16 @@
     "eventUrl": "",
     "meetupEventId": "",
     "imageUrl": ""
+  },
+  {
+    "title": "October Gamedev Work Night",
+    "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n\nFor full details, including the address, and to RSVP see: <a href=\"https://www.google.com/url?q=https://www.meetup.com/st-louis-game-developers/events/316753085&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw2WIQCb8tuwdiEzedJN2Dly\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/316753085</a>",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-10-26T17:00:00.000-05:00",
+    "endTime": "2026-10-26T20:00:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316753085",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/7/7/a/3/600_533010627.jpeg"
   },
   {
     "title": "Spooky Jam Showcase",
