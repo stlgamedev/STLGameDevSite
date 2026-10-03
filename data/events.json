@@ -7,7 +7,7 @@
     "endTime": "2026-10-18T23:30:00.000-05:00",
     "eventUrl": "",
     "meetupEventId": "316699612",
-    "imageUrl": "https://secure.meetupstatic.com/photos/event/3/d/3/6/600_536295670.jpeg"
+    "imageUrl": ""
   },
   {
     "title": "October GameDev Social!",
@@ -28,6 +28,16 @@
     "eventUrl": "",
     "meetupEventId": "316753984",
     "imageUrl": "https://secure.meetupstatic.com/photos/event/b/7/7/6/600_536386966.jpeg"
+  },
+  {
+    "title": "October Game Audio Club",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. Chill time where you can share your work, get feedback, or just vibe with people who love game audio. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316765267",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-10-24T15:00:00.000-05:00",
+    "endTime": "2026-10-24T17:00:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "316765267",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/a/b/8/2/600_534523906.jpeg"
   },
   {
     "title": "October Gamedev Work Night",
