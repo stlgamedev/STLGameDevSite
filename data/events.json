@@ -1,13 +1,13 @@
 [
   {
     "title": "Spooky Jam 2026",
-    "description": "<span><br><span>It's Spooky Season, which means it's time for another <a href=\"https://itch.io/jam/stlgamedev-spooky-jam-2026\" target=\"_blank\">Spooky Jam</a>! We encourage everyone to make games but <b>we will accept creations of all kinds for this jam!</b> Feel free to make a video game, board game, card game, visual art, comic, zine, song, music album, visual novel, poem, short story, sculpture... anything!</span></span> <br>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/316699612\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/316699612</a>",
+    "description": "<span><br><span>It's Spooky Season, which means it's time for another <a href=\"https://itch.io/jam/stlgamedev-spooky-jam-2026\" target=\"_blank\">Spooky Jam</a>! We encourage everyone to make games but <b>we will accept creations of all kinds for this jam!</b> Feel free to make a video game, board game, card game, visual art, comic, zine, song, music album, visual novel, poem, short story, sculpture... anything!</span></span> <br>For full details, including the address, and to RSVP see:<a href=\"https://www.meetup.com/st-louis-game-developers/events/316821011/?eventOrigin=group_events_list\">https://www.meetup.com/st-louis-game-developers/events/316821011/</a>",
     "location": "https://itch.io/jam/stlgamedev-spooky-jam-2026",
     "dateTime": "2026-10-01T19:00:00.000-05:00",
     "endTime": "2026-10-18T23:30:00.000-05:00",
     "eventUrl": "",
-    "meetupEventId": "316699612",
-    "imageUrl": ""
+    "meetupEventId": "316821011",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/3/d/3/6/600_536295670.jpeg"
   },
   {
     "title": "October GameDev Social!",
@@ -20,8 +20,8 @@
     "imageUrl": "https://secure.meetupstatic.com/photos/event/9/6/0/f/600_534398415.jpeg"
   },
   {
-    "title": "Game Club: 🎃?",
-    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. Our game for this month is being voted on right now!\n \nFor full details, including the address, and to RSVP see:https://www.meetup.com/st-louis-game-developers/events/316753984/",
+    "title": "Game Club: Toree Saturn",
+    "description": "Game Club is like a book club except we pick a game to play each month and then meet up to discuss it with a focus on game design. Our game for this month is <a href=\"https://store.steampowered.com/app/2549240/Toree_Saturn/\">Toree Saturn</a>!<br><br>For full details, including the address, and to RSVP see:<a href=\"https://www.meetup.com/st-louis-game-developers/events/316753984/\" target=\"_blank\">https://www.meetup.com/st-louis-game-developers/events/316753984/</a>",
     "location": "Sauce on the Side, 701 N New Ballas Rd, Creve Coeur, MO 63141, USA",
     "dateTime": "2026-10-19T18:30:00.000-05:00",
     "endTime": "2026-10-19T20:30:00.000-05:00",
@@ -50,14 +50,14 @@
     "imageUrl": "https://secure.meetupstatic.com/photos/event/5/6/0/c/600_536362028.jpeg"
   },
   {
-    "title": "Spooky Jam Showcase",
-    "description": "Maryville University \nDVA Rm 103",
+    "title": "Spooky Jam 2026 Games Showcase",
+    "description": "We will demo all of the entries to the jam at Maryville University in the Design & Visual Art Building Rm 103. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316806627",
     "location": "Maryville University, 650 Maryville University Dr, St. Louis, MO 63141, USA",
     "dateTime": "2026-10-29T18:30:00.000-05:00",
     "endTime": "2026-10-29T20:30:00.000-05:00",
     "eventUrl": "",
-    "meetupEventId": "",
-    "imageUrl": ""
+    "meetupEventId": "316806627",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/3/d/3/6/600_536295670.jpeg"
   },
   {
     "title": "Share & Play: Game Playtesting!",
