@@ -24,11 +24,13 @@
     "jsdom": "^26.1.0",
     "luxon": "^3.7.2",
     "node-fetch": "^3.3.2",
-    "rss-parser": "^3.13.0",
-    "sass": "^1.97.0"
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "prettier": "^3.7.4",
     "prettier-plugin-go-template": "^0.0.15"
+  },
+  "volta": {
+    "node": "24.21.0"
   }
 }

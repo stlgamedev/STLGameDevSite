@@ -6,6 +6,12 @@ This is the source code for the STLGameDev Website.
 
 The site is driven by [Hugo](https://gohugo.io/) with [Bootstrap](https://getbootstrap.com/) and [jQuery](https://jquery.com/).
 
+## Building Locally
+
+You'll need [Hugo Extended](https://gohugo.io/installation/) (see `.hugo-version` for the version), [Node.js](https://nodejs.org/), and [Dart Sass](https://sass-lang.com/install/) (the standalone `sass` executable, *not* the `sass` npm package) on your PATH. Then run `npm install` and `npm run dev`.
+
+## Deployment
+
 The site is built by [GitHub Actions](https://github.com/stlgamedev/STLGameDevSite/actions) on pushes to the main branch and hosted as a GitHub Page at [https://stlgame.dev](https://stlgame.dev) and (eventually) [https://stlgamedev.com](https://stlgamedev.com)
 
 ## Directory
