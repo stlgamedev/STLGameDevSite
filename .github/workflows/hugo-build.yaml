@@ -58,7 +58,7 @@ jobs:
             #             old_news=$(jq . news_index.json)
             #             echo 'old_news'=$old_news >> $GITHUB_OUTPUT
             -   name: Checkout
-                uses: actions/checkout@v4
+                uses: actions/checkout@v7
                 with: 
                     submodules: recursive
                     fetch-depth: 0
@@ -76,11 +76,11 @@ jobs:
                 run: sudo snap install dart-sass
             -   name: Setup Pages
                 id: pages
-                uses: actions/configure-pages@v5
+                uses: actions/configure-pages@v6
             -   name: Setup Node
-                uses: actions/setup-node@v4
+                uses: actions/setup-node@v7
                 with:
-                    node-version: 20.10.0
+                    node-version: 24
             -   name: Install dependencies
                 run: npm ci
             -   name: Pull
@@ -106,7 +106,7 @@ jobs:
             #             echo $new_items          
             #             echo new_items=$new_items >> $GITHUB_OUTPUT             
             -   name: Upload Artifact
-                uses: actions/upload-pages-artifact@v3
+                uses: actions/upload-pages-artifact@v5
                 with: 
                     path: ./public
     
@@ -122,7 +122,7 @@ jobs:
         steps:
             -   name: Deploy
                 id: deployment
-                uses: actions/deploy-pages@v4
+                uses: actions/deploy-pages@v5
 
     # share:
     #     runs-on: ubuntu-latest
