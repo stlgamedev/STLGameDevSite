@@ -41,13 +41,63 @@
   },
   {
     "title": "Spooky Jam 2026 Games Showcase",
-    "description": "We will demo all of the entries to the jam at Maryville University in the Design & Visual Art Building Rm 103. \n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316806627",
+    "description": "We will demo all of the entries to the jam at Maryville University in the Design & Visual Art Building Rm 103. Come show off your entry and check out what others made!\n\nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316806627",
     "location": "Maryville University, 650 Maryville University Dr, St. Louis, MO 63141, USA",
     "dateTime": "2026-10-29T18:30:00.000-05:00",
     "endTime": "2026-10-29T20:30:00.000-05:00",
     "eventUrl": "",
     "meetupEventId": "316806627",
     "imageUrl": "https://secure.meetupstatic.com/photos/event/6/5/5/9/600_536485945.jpeg"
+  },
+  {
+    "title": "SLICExpo 2026",
+    "description": "The St. Louis Independent Comics Expo (<a href=\"https://slicexpo.org/\">SLICE</a>) is St. Louis’s premier annual indie-print showcase, bringing together over 100 writers and artists from St. Louis and beyond to showcase their self-published books, comics, zines, prints, magazines, poetry, and more. SLICE 2026 takes place on October 31, 10 a.m.–5 p.m., at The Sheldon Concert Hall and Art Galleries. The expo is free to attend and open to the public. Programming throughout the day will include lectures and workshops by SLICE’s special and featured guests, as well as activities provided by local artists and organizations.",
+    "location": "The Sheldon Concert Hall and Art Galleries, 3648 Washington Ave, St. Louis, MO 63108, USA",
+    "dateTime": "2026-10-31T10:00:00.000-05:00",
+    "endTime": "2026-10-31T17:00:00.000-05:00",
+    "eventUrl": "",
+    "meetupEventId": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "Cougar Jam 2026 (SIUE)",
+    "description": "<a href=\"https://cougarjam.cs.siue.edu/\">Cougar Jam</a> is the SIUE Game Development Group's annual game jam! Teams have three days to make a game complete for scratch! It is a weekend event with special guest judges, free food, and prizes! Open to any college student!",
+    "location": "SIUE School of Engineering, 62026, 61 Circle Dr, Edwardsville, IL 62026, USA",
+    "dateTime": "2026-11-06T18:00:00.000-06:00",
+    "endTime": "2026-11-08T18:00:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "STLVGMO Trivia Night Fundraiser",
+    "description": "<span>A night of harvest-themed fun with trivia categories for both gamers and non-gamers alike. Guests can sign up as a table of 8, or can register solo/in groups smaller than 8 to be paired up with new friends for the evening.<br></span><span><span>$25 / person or $200 / 8-person table </span></span><span><span><a href=\"https://givebutter.com/c/st-louis-video-game-orchestra-trivia-night\" target=\"_blank\"><span>GET TICKETS</span></a> </span></span>",
+    "location": "THE HEIGHTS: The Richmond Heights Community Center, 8001 Dale Ave, Richmond Heights, MO 63117, USA",
+    "dateTime": "2026-11-07T18:30:00.000-06:00",
+    "endTime": "2026-11-07T21:30:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "November GameDev Social!",
+    "description": "Chat with fellow creators about making, playing, and admiring games! Talk about your game ideas and get inspired! Make friends and find collaborators. Our monthly hangout is open to EVERYONE! \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316699479",
+    "location": "Schlafly Bottleworks, 7260 Southwest Ave, St. Louis, MO 63143, USA",
+    "dateTime": "2026-11-12T19:00:00.000-06:00",
+    "endTime": "2026-11-12T22:00:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "316699479",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/9/6/0/f/600_534398415.jpeg"
+  },
+  {
+    "title": "November Game Audio Club",
+    "description": "If you’re into making video game music or sound design (or just curious) come hang out with us once a month! Doesn’t matter if you’re a pro or just starting out— everyone’s welcome. Just bring your love for game audio. Chill time where you can share your work, get feedback, or just vibe with people who love game audio. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/317001810",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-11-14T15:00:00.000-06:00",
+    "endTime": "2026-11-14T17:00:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "317001810",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/a/b/8/2/600_534523906.jpeg"
   },
   {
     "title": "Share & Play: Game Playtesting!",
@@ -58,5 +108,15 @@
     "eventUrl": "",
     "meetupEventId": "314944382",
     "imageUrl": "https://secure.meetupstatic.com/photos/event/9/a/5/600_533042469.jpeg"
+  },
+  {
+    "title": "November Gamedev Work Night",
+    "description": "St. Louis County Library Clark Family branch is hosting casual work time for local game developers in the Creative Lab. Bring your project to work on and talk with other devs for feedback or fun. This is open to EVERYONE ages 14 and up. \n \nFor full details, including the address, and to RSVP see: https://www.meetup.com/st-louis-game-developers/events/316934050",
+    "location": "St. Louis County Library - Clark Family Branch, 1640 S Lindbergh Blvd, St. Louis, MO 63131, USA",
+    "dateTime": "2026-11-30T17:00:00.000-06:00",
+    "endTime": "2026-11-30T20:00:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "316934050",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/5/6/0/c/600_536362028.jpeg"
   }
 ]
