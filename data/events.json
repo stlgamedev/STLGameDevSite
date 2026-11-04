@@ -58,5 +58,15 @@
     "eventUrl": "",
     "meetupEventId": "316934050",
     "imageUrl": "https://secure.meetupstatic.com/photos/event/5/6/0/c/600_536362028.jpeg"
+  },
+  {
+    "title": "STLGameDev Holiday Party",
+    "description": "Join us in <span><span>celebrating another year of game development in St. Louis at</span></span> our annual Holiday Party! We will have fun multiplayer games on a giant screen, retro consoles, STL-made games, and ornament making! It will be a great time to chat with other devs, make new friends, and find collaborators. Don't miss one of the biggest game dev events of the year!<span> </span><br><span> </span><br><span>For full details, including the address, and to RSVP see: <a href=\"https://www.meetup.com/st-louis-game-developers/events/317248375\">https://www.meetup.com/st-louis-game-developers/events/317248375</a></span>",
+    "location": "Archportals, 1006 Olive St #3W, St. Louis, MO 63101, USA",
+    "dateTime": "2026-12-06T14:30:00.000-06:00",
+    "endTime": "2026-12-06T18:30:00.000-06:00",
+    "eventUrl": "",
+    "meetupEventId": "317248375",
+    "imageUrl": "https://secure.meetupstatic.com/photos/event/8/2/c/7/600_536973479.jpeg"
   }
 ]
