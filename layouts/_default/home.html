@@ -148,6 +148,8 @@
                 </div>
             </div>
 
+            {{/* GDC 2027 runs through March 4; the banner drops out on the first build after that. */}}
+            {{ if lt now (time "2027-03-05") }}
             <div class="card flex-fill">
                 <div class="card-body text-center">
                     <a href="https://gdconf.com/" target="_blank" rel="noopener sponsored">
@@ -157,6 +159,7 @@
                     </a>
                 </div>
             </div>
+            {{ end }}
 
             {{ partial "latest-roundup.html" . }}
 
