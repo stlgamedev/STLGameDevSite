@@ -1,5 +1,5 @@
 baseURL = 'https://stlgame.dev/'
-languageCode = 'en-us'
+locale = 'en-us'
 defaultContentLanguage = "en"
 timeZone = "America/Chicago"
 title = 'STLGameDev'

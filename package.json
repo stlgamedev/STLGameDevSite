@@ -5,7 +5,7 @@
   "main": "index.html",
   "engines": {
     "node": ">=20.0.0",
-    "hugo": ">=0.152.2"
+    "hugo": ">=0.169.0"
   },
   "scripts": {
     "build": "hugo",

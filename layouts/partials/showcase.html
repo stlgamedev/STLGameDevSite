@@ -1,5 +1,5 @@
 {{ $itemName := . }}
-{{ $item := index site.Data.showcase $itemName }}
+{{ $item := index hugo.Data.showcase $itemName }}
 {{ if $item }}
 {{ with $item }}
 <div class="d-flex w-100 flex-md-row flex-column p-2 border rounded ">

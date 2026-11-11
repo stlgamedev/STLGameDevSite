@@ -2,7 +2,7 @@
 
 {{- $today := now | time.Format $layout -}}
 
-{{- $eventsRaw := .Site.Data.events -}}
+{{- $eventsRaw := hugo.Data.events -}}
 {{- $upcoming := slice -}}
 
 {{- range $event := $eventsRaw }}

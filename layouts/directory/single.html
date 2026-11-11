@@ -13,7 +13,7 @@
 {{ end }}
 
 {{ define "main" -}}
-{{ $directory := .Site.Data.directory }}
+{{ $directory := hugo.Data.directory }}
 {{ $directory := sort $directory "Name" "asc" }}
 {{- range $directoryItem := $directory }}
 {{- with $directoryItem }}
