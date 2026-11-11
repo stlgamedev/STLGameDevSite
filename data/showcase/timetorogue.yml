@@ -1,0 +1,9 @@
+Name: 'Time to Rogue'
+Description: "A roguelike dungeon crawler for iPhone and Apple Watch where the resource is real-world time. Moving, attacking, and waiting spend focus, which recovers over hours, so you play in glances throughout your day. Rest too long, though, and the maze starts to hunt."
+Links:
+  - URL: 'https://www.midnightlaunchgames.com/games/timetorogue'
+    Tooltip: 'Official Website'
+    Icon: "fa-sharp-duotone fa-solid fa-link"
+  - URL: 'https://apps.apple.com/us/app/time-to-rogue/id6786902468'
+    Tooltip: 'App Store'
+    Icon: "fa-brands fa-app-store-ios"

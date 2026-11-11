@@ -1,0 +1,15 @@
+Name: 'Gravesweeper'
+Description: "Minesweeper meets a haunted dungeon adventure. Read the clues, dodge traps, collect candy, and build your way through dangerous floors in the Campaign, the Daily Run, or the roguelike Reaper's Run. Free on iPhone and Android, with a desktop edition and web demo on itch.io."
+Links:
+  - URL: 'https://www.midnightlaunchgames.com/games/gravesweeper'
+    Tooltip: 'Official Website'
+    Icon: "fa-sharp-duotone fa-solid fa-link"
+  - URL: 'https://apps.apple.com/us/app/gravesweeper/id6754204296'
+    Tooltip: 'App Store'
+    Icon: "fa-brands fa-app-store-ios"
+  - URL: 'https://play.google.com/store/apps/details?id=com.midnightlaunchgames.gravesweeper'
+    Tooltip: 'Google Play'
+    Icon: "fa-brands fa-google-play"
+  - URL: 'https://superwes.itch.io/gravesweeper'
+    Tooltip: 'Itch.io'
+    Icon: "fa-brands fa-itch-io"
