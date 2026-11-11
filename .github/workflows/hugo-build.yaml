@@ -72,8 +72,14 @@ jobs:
                 run: |
                     wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${{ steps.hugo-version.outputs.version }}/hugo_extended_${{ steps.hugo-version.outputs.version }}_linux-amd64.deb \
                     && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+            # Pinned to 1.x: Bootstrap's SCSS uses @import, which Dart Sass 3.0 removes.
             -   name: Install Dart Sass
-                run: sudo snap install dart-sass
+                env:
+                    DART_SASS_VERSION: 1.108.2
+                run: |
+                    curl -fsSL https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
+                    | tar -xz -C ${{ runner.temp }}
+                    echo "${{ runner.temp }}/dart-sass" >> $GITHUB_PATH
             -   name: Setup Pages
                 id: pages
                 uses: actions/configure-pages@v6

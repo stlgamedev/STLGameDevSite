@@ -21,7 +21,7 @@ If you are a developer from the St. Louis area, and have projects you would like
 ### How to Add a Developer
 
 > [!IMPORTANT]
-> You *must* add a Devloper in order to add Projects.
+> You *must* add a Developer in order to add Projects.
 
 1. Add a new file: `/data/directory/devname.yml` use all lowercase and only alpha-numeric characters in the file name.
 2. The file should contain the following content:
