@@ -7,6 +7,10 @@
   </div>
 
   <div class="card-body text-center py-5">
+    {{ with resources.Get "images/404-monsters.png" }}
+    <img src="{{ .RelPermalink }}" width="{{ mul .Width 2 }}" height="{{ mul .Height 2 }}" class="img-fluid mb-4"
+      style="image-rendering: pixelated;" alt="Three pixel-art monsters" />
+    {{ end }}
     <p class="fs-5">Sorry, but our princess is in another castle!</p>
     <a class="btn btn-primary rounded" href="{{ site.Home.RelPermalink }}">Back to the Home Page</a>
   </div>
