@@ -148,6 +148,16 @@
                 </div>
             </div>
 
+            <div class="card flex-fill">
+                <div class="card-body text-center">
+                    <a href="https://gdconf.com/" target="_blank" rel="noopener sponsored">
+                        <img {{ with resources.Get "images/ads/gdc27-300x50.gif" }}src="{{ .RelPermalink }}" {{ end }}
+                            width="300" height="50" class="img-fluid"
+                            alt="GDC Festival of Gaming, March 1-4, 2027, San Francisco" />
+                    </a>
+                </div>
+            </div>
+
             {{ partial "latest-roundup.html" . }}
 
         </div>
