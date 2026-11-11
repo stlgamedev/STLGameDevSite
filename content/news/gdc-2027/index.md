@@ -12,4 +12,4 @@ If you would like to go to GDC this year with us, **[apply for a ticket here](ht
 
 If you go on STLGameDev's behalf, you must share your experiences that you had with the community when you return in the form of a Microtalk on the STLGameDev Discord!
 
-If you don't want to wait around, [secure your pass](https://gdconf.com/) and join us! You can get 10% off your pass today with the promo code: **CP-BPEwu**. There are a lot of different pass types this year that are much cheaper as well, such as a pass for the Festival Hall only for $175. [Check them out!](https://discord.com/channels/406541601750515718/1564664699440861345/1569039297263304874)
+If you don't want to wait around, [secure your pass](https://gdconf.com/) and join us! You can get 10% off your pass today with the promo code: **CP-BPEwu**. There are a lot of different pass types this year that are much cheaper as well, such as a pass for the Festival Hall only for $175. [Check them out!](https://gdconf.com/passes-pricing/)
