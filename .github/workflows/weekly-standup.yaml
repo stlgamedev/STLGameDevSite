@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '7 14 * * 1'  # 8:07 AM CST (9:07 AM CDT); GitHub cron is always UTC
 
 jobs:
   check-repo:
