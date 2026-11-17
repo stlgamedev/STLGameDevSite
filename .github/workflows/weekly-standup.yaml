@@ -1,10 +1,9 @@
 name: 🔁 Weekly Leadership Standup
 
+# The Monday post is scheduled on cron-job.org (posts to a #leadership webhook).
+# This workflow is kept as a manual backup.
 on:
   workflow_dispatch:
-
-  schedule:
-    - cron: '7 14 * * 1'  # 8:07 AM CST (9:07 AM CDT); GitHub cron is always UTC
 
 jobs:
   check-repo:
